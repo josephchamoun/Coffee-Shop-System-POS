@@ -80,6 +80,8 @@ namespace summer2
         {
             MessageBox.Show("joseph push");
             MessageBox.Show("ijnedi");
+            MessageBox.Show("ijnedi");
+            MessageBox.Show("ijnedi");
             home.Show();
         }
 
