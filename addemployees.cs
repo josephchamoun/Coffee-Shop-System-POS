@@ -10,20 +10,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
 using Siticone.Desktop.UI.WinForms;
+using CoffeeStation;
 
 namespace summer2
 {
-    public partial class Form1 : Form
+    public partial class addemployees : Form
     {
-        public static Form1 form1inst;
+        public static addemployees form1inst;
         Billings billings;
         Home home;
-        public Form1()
+        Form1 sidebar;
+        public addemployees()
         {
            // MaterialSkinManager materialskinmanager;
             InitializeComponent();
             home = new Home();
             billings = new Billings();
+            sidebar = new Form1();
             form1inst = this;
            // materialskinmanager = MaterialSkinManager.Instance;
            // materialskinmanager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey900, Accent.Cyan700, TextShade.WHITE);
@@ -48,7 +51,7 @@ namespace summer2
             Form background = new Form();
             try
             {
-                using (Form2 frm = new Form2())
+                using (addemployeescard frm = new addemployeescard())
                 {
                     background.StartPosition = FormStartPosition.Manual;
                     background.FormBorderStyle = FormBorderStyle.None;
@@ -89,6 +92,12 @@ namespace summer2
         {
             this.Hide();
             billings.Show();
+        }
+
+        private void siticoneCircleButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            sidebar.Show();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace summer2
 {
-    public partial class UserControl3 : UserControl
+    public partial class itemUS : UserControl
     {
-        public UserControl3()
+        public itemUS()
         {
             InitializeComponent();
             AdjustInternalControlSizes();
