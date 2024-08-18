@@ -13,10 +13,10 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace summer2
 {
-    public partial class Form2 : MaterialForm
+    public partial class addemployeescard : MaterialForm
     {
         
-        public Form2()
+        public addemployeescard()
         {
             MaterialSkinManager materialskinmanager;
             InitializeComponent();
@@ -44,12 +44,12 @@ namespace summer2
             try
             {
                 // Create an instance of UserControl1
-                UserControl1 myUserControl = new UserControl1();
+                employeeUS myUserControl = new employeeUS();
 
                 myUserControl.firstname.Text = nametb.Text;
 
                 // Add the UserControl to the FlowLayoutPanel on Form1
-               Form1.form1inst.flowLayoutPanel2.Controls.Add(myUserControl);
+               addemployees.form1inst.flowLayoutPanel2.Controls.Add(myUserControl);
 
                 MessageBox.Show("UserControl added successfully.");
 

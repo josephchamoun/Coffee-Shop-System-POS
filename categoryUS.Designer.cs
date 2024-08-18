@@ -1,6 +1,6 @@
 ﻿namespace summer2
 {
-    partial class UserControl2
+    partial class categoryUS
     {
         /// <summary> 
         /// Required designer variable.
