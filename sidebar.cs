@@ -35,30 +35,11 @@ namespace CoffeeStation
         public Form1()
         {
             InitializeComponent();
-            InitializeSubMenuButtons();
+         
             this.WindowState = FormWindowState.Maximized;
             mdiProp();
         }
-        private void InitializeSubMenuButtons()
-        {
-            // Initialize the new buttons
-            formSubMenu3 = new Button();
-            formSubMenu4 = new Button();
-            formSubMenu5 = new Button();
-            formSubMenu6 = new Button();
 
-            // Set properties for the new buttons
-            formSubMenu3.Text = "Display All Products";
-            formSubMenu4.Text = "Add Shifts and Roles";
-            formSubMenu5.Text = "Add Expenses";
-            formSubMenu6.Text = "Add Suppliers";
-
-            // Set the size, location, and other properties as needed
-            formSubMenu3.Size = new Size(180, 40);
-            formSubMenu4.Size = new Size(180, 40);
-            formSubMenu5.Size = new Size(180, 40);
-            formSubMenu6.Size = new Size(180, 40);
-        }
       
 
         private void menu_Click_1(object sender, EventArgs e)
@@ -70,7 +51,18 @@ namespace CoffeeStation
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (dashboard == null)
+            {
+                dashboard = new Home();
+                dashboard.FormClosed += Dashboard_FormClosed;
+                dashboard.MdiParent = this;
+                dashboard.Dock = DockStyle.Fill;
+                dashboard.Show();
+            }
+            else
+            {
+                dashboard.Activate();
+            }
         }
 
 
@@ -145,7 +137,7 @@ namespace CoffeeStation
             else
             {
                 sidebar.Width += 10;
-                if (sidebar.Width >= 200)
+                if (sidebar.Width >= 150)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
@@ -331,3 +323,4 @@ namespace CoffeeStation
         }
     }
 }
+//lzm n3mlo responsive (badna n8ayir l numbers w nhet proportion ahsan)

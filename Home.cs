@@ -32,35 +32,41 @@ namespace summer2
         }
         private void AdjustUserControlSizes()
         {
-            // Fixed width of each user control
-            int userControlWidth = 350; //heda 7ajem l usercontrol3 // Replace with the actual width of your UserControl
+            // Define constants
+            int controlCountPerRow = 3; // Always 3 controls per row
+
+            // Calculate the spacing as a fraction of the panel width
+            int spaceBetweenControls = menuFlowLayoutPanel.ClientSize.Width / 60; // Space between controls
+            int spaceAtEdges = menuFlowLayoutPanel.ClientSize.Width / 60; // Space at the edges
 
             // Get the width of the panel
             int panelWidth = menuFlowLayoutPanel.ClientSize.Width;
 
-            // Define constants
-            int margin = 10; // Margin between controls
+            // Calculate the total width available for user controls
+            int totalSpaceForControls = panelWidth - (2 * spaceAtEdges) - (controlCountPerRow - 1) * spaceBetweenControls;
 
-            // Calculate the number of controls that can fit in one row
-            int controlCountPerRow = (panelWidth + margin) / (userControlWidth + margin);
+            // Calculate the width for each control
+            int userControlWidth = totalSpaceForControls / controlCountPerRow;
 
-            // Calculate the total width required for the controls and margins
-            int totalWidthOfControls = controlCountPerRow * userControlWidth + (controlCountPerRow - 1) * margin;
-
-
-            
+            // Calculate height based on width (assuming a fixed aspect ratio, e.g., 4:3)
+            int userControlHeight = (int)(userControlWidth * 0.75); // Adjust aspect ratio as needed
 
             // Adjust the layout of each control
             foreach (Control control in menuFlowLayoutPanel.Controls)
             {
-                // Set width of each control
+                // Set width and height of each control
                 control.Width = userControlWidth;
-                control.Margin = new Padding(margin / 2); // Distribute margin equally on both sides
+                control.Height = userControlHeight;
+
+                // Set margin of each control
+                control.Margin = new Padding(spaceBetweenControls / 2, 3, spaceBetweenControls / 2, 3);
             }
 
             // Force the layout to update
             menuFlowLayoutPanel.PerformLayout();
         }
+
+
 
 
 
@@ -219,6 +225,15 @@ namespace summer2
             resultnum.Location = new Point(newX, newY);
         }
 
+        private void searchbar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
