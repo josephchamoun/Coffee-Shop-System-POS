@@ -47,3 +47,4 @@ C:\Users\96181\source\repos\summer2\obj\Debug\CoffeeStation.Form1.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.employeeUS.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.categoryUS.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.itemUS.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.checkoutitemsUS.resources
