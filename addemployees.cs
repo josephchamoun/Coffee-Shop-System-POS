@@ -79,25 +79,8 @@ namespace summer2
             }
         }
 
-        private void siticoneCircleButton1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("joseph push");
-            MessageBox.Show("ijnedi");
-            MessageBox.Show("ijnedi");
-            MessageBox.Show("ijnedi");
-            home.Show();
-        }
 
-        private void siticoneCircleButton2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            billings.Show();
-        }
 
-        private void siticoneCircleButton3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            sidebar.Show();
-        }
+
     }
 }

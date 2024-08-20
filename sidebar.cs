@@ -91,7 +91,7 @@ namespace CoffeeStation
             if (menuExpand == false)
             {
                 menuContainer.Height += 5;
-                if (menuContainer.Height >= 370)
+                if (menuContainer.Height >= 425)
                 {
                     menuTransition.Stop();
                     menuExpand = true;
@@ -121,7 +121,7 @@ namespace CoffeeStation
             {
                 //Sidebar Expand Closed
                 sidebar.Width -= 10;
-                if (sidebar.Width <= 60)
+                if (sidebar.Width <= 58)
                 {
                     sidebarExpand = false;
                     sidebarTransition.Stop();

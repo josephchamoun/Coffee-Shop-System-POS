@@ -232,14 +232,14 @@
             this.siticoneCirclePictureBox1.TabIndex = 18;
             this.siticoneCirclePictureBox1.TabStop = false;
             // 
-            // UserControl1
+            // employeeUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.siticoneCustomGradientPanel1);
-            this.Name = "UserControl1";
+            this.Name = "employeeUS";
             this.Size = new System.Drawing.Size(487, 338);
             this.contextMenuStrip1.ResumeLayout(false);
             this.siticoneCustomGradientPanel1.ResumeLayout(false);

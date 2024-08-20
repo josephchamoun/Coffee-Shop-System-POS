@@ -141,6 +141,12 @@
     <Compile Include="addemployeescard.Designer.cs">
       <DependentUpon>addemployeescard.cs</DependentUpon>
     </Compile>
+    <Compile Include="checkoutitemsUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="checkoutitemsUS.Designer.cs">
+      <DependentUpon>checkoutitemsUS.cs</DependentUpon>
+    </Compile>
     <Compile Include="expenses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addemployeescard.resx">
       <DependentUpon>addemployeescard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkoutitemsUS.resx">
+      <DependentUpon>checkoutitemsUS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

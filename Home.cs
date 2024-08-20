@@ -75,6 +75,7 @@ namespace summer2
 
         private void AdjustCheckoutPanelControls()
         {
+            // Existing code
             // Get the size of the checkoutPanel
             int panelWidth = checkoutPanel.ClientSize.Width;
             int panelHeight = checkoutPanel.ClientSize.Height;
@@ -111,6 +112,28 @@ namespace summer2
             price2.Location = new Point(rightX, disclbY); // Align with disclbY
             totallbprice.Location = new Point(rightX, totallbY); // Align with totallbY
             checkoutbtn.Location = new Point((panelWidth - checkoutbtn.Width) / 2, checkoutbtnY);
+
+            // New code for displayitems
+            int margin2 = this.ClientSize.Width / 60;
+            // Position for the displayitems FlowLayoutPanel
+            int displayitemsY = empname.Bottom + margin2; // Position it a bit below empname
+            
+            displayitems.Location = new Point(subtotallb.Left, displayitemsY); // Align the left with subtotallb
+                                                                               // Calculate the width of the displayitems FlowLayoutPanel
+            int displayitemsWidth = (int)(panelWidth * 0.98) - subtotallb.Left; // Set the width to be slightly less than the checkoutPanel's full width using proportion
+
+            // Calculate the height of the displayitems FlowLayoutPanel
+            int displayitemsHeight = subtotallbY - displayitemsY - (int)(panelHeight * 0.02); // Adjust the height using proportion
+
+            // Set the size of displayitems
+            displayitems.Size = new Size(displayitemsWidth, displayitemsHeight);
+            foreach (Control control in displayitems.Controls)
+            {
+                control.Width = displayitems.ClientSize.Width-(margin2/5); // Fill the width
+                control.Height =( displayitems.ClientSize.Height / 6) -(margin2/3); // Set height to 1/6 of the FlowLayoutPanel height
+        
+            }
+
         }
 
 
@@ -231,6 +254,11 @@ namespace summer2
         }
 
         private void addButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkoutPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

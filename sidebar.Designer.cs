@@ -38,17 +38,16 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.adminbtn = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.shiftsandrolesbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.expensesbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.formSubMenu2 = new System.Windows.Forms.Button();
+            this.managesuppliersbtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.allproductsbtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.formSubMenu1 = new System.Windows.Forms.Button();
+            this.manageempbtn = new System.Windows.Forms.Button();
             this.pnLogout = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.pnBillings = new System.Windows.Forms.Panel();
@@ -59,6 +58,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.manageproductbtn = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
             this.sidebar.SuspendLayout();
             this.pnDashboard.SuspendLayout();
@@ -73,6 +74,7 @@
             this.pnBillings.SuspendLayout();
             this.pnSettings.SuspendLayout();
             this.pnTables.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnHam
@@ -94,9 +96,9 @@
             this.sidebar.Controls.Add(this.pnDashboard);
             this.sidebar.Controls.Add(this.menuContainer);
             this.sidebar.Controls.Add(this.pnLogout);
-            this.sidebar.Controls.Add(this.pnBillings);
             this.sidebar.Controls.Add(this.pnSettings);
             this.sidebar.Controls.Add(this.pnTables);
+            this.sidebar.Controls.Add(this.pnBillings);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
@@ -135,24 +137,26 @@
             // 
             // menuContainer
             // 
-            this.menuContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.menuContainer.Controls.Add(this.panel9);
-            this.menuContainer.Controls.Add(this.panel8);
-            this.menuContainer.Controls.Add(this.panel6);
-            this.menuContainer.Controls.Add(this.panel2);
-            this.menuContainer.Controls.Add(this.panel3);
+            this.menuContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.menuContainer.Controls.Add(this.panel4);
+            this.menuContainer.Controls.Add(this.panel3);
+            this.menuContainer.Controls.Add(this.panel9);
+            this.menuContainer.Controls.Add(this.panel2);
+            this.menuContainer.Controls.Add(this.panel5);
+            this.menuContainer.Controls.Add(this.panel6);
+            this.menuContainer.Controls.Add(this.panel8);
             this.menuContainer.Location = new System.Drawing.Point(0, 153);
             this.menuContainer.Margin = new System.Windows.Forms.Padding(0);
             this.menuContainer.Name = "menuContainer";
-            this.menuContainer.Size = new System.Drawing.Size(363, 62);
+            this.menuContainer.Size = new System.Drawing.Size(363, 57);
             this.menuContainer.TabIndex = 9;
             this.menuContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.menuContainer_Paint);
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.adminbtn);
-            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel9.Controls.Add(this.shiftsandrolesbtn);
+            this.panel9.Location = new System.Drawing.Point(0, 122);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(363, 64);
@@ -166,7 +170,7 @@
             this.adminbtn.ForeColor = System.Drawing.Color.White;
             this.adminbtn.Image = ((System.Drawing.Image)(resources.GetObject("adminbtn.Image")));
             this.adminbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.adminbtn.Location = new System.Drawing.Point(-14, -32);
+            this.adminbtn.Location = new System.Drawing.Point(-14, -34);
             this.adminbtn.Name = "adminbtn";
             this.adminbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.adminbtn.Size = new System.Drawing.Size(443, 122);
@@ -178,32 +182,33 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.button1);
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel8.Controls.Add(this.managesuppliersbtn);
             this.panel8.Controls.Add(this.panel1);
-            this.panel8.Location = new System.Drawing.Point(0, 64);
+            this.panel8.Location = new System.Drawing.Point(0, 369);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(363, 64);
             this.panel8.TabIndex = 10;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
-            // button1
+            // shiftsandrolesbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-14, -9);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(415, 89);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "                Manage";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.shiftsandrolesbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.shiftsandrolesbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shiftsandrolesbtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shiftsandrolesbtn.ForeColor = System.Drawing.Color.White;
+            this.shiftsandrolesbtn.Image = ((System.Drawing.Image)(resources.GetObject("shiftsandrolesbtn.Image")));
+            this.shiftsandrolesbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.shiftsandrolesbtn.Location = new System.Drawing.Point(-14, -15);
+            this.shiftsandrolesbtn.Margin = new System.Windows.Forms.Padding(0);
+            this.shiftsandrolesbtn.Name = "shiftsandrolesbtn";
+            this.shiftsandrolesbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.shiftsandrolesbtn.Size = new System.Drawing.Size(415, 89);
+            this.shiftsandrolesbtn.TabIndex = 12;
+            this.shiftsandrolesbtn.Text = "             Shifts and Roles";
+            this.shiftsandrolesbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.shiftsandrolesbtn.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -215,140 +220,125 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.button3);
-            this.panel6.Location = new System.Drawing.Point(0, 128);
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel6.Controls.Add(this.allproductsbtn);
+            this.panel6.Location = new System.Drawing.Point(0, 308);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(363, 61);
             this.panel6.TabIndex = 7;
             // 
-            // button3
+            // expensesbtn
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-14, -35);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(415, 122);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "                Manage";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.expensesbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.expensesbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.expensesbtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expensesbtn.ForeColor = System.Drawing.Color.White;
+            this.expensesbtn.Image = ((System.Drawing.Image)(resources.GetObject("expensesbtn.Image")));
+            this.expensesbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.expensesbtn.Location = new System.Drawing.Point(-14, -14);
+            this.expensesbtn.Margin = new System.Windows.Forms.Padding(0);
+            this.expensesbtn.Name = "expensesbtn";
+            this.expensesbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.expensesbtn.Size = new System.Drawing.Size(415, 89);
+            this.expensesbtn.TabIndex = 13;
+            this.expensesbtn.Text = "                Expenses           ";
+            this.expensesbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.expensesbtn.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.formSubMenu2);
-            this.panel2.Location = new System.Drawing.Point(0, 189);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel2.Controls.Add(this.expensesbtn);
+            this.panel2.Location = new System.Drawing.Point(0, 186);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(363, 61);
             this.panel2.TabIndex = 14;
             // 
-            // formSubMenu2
+            // managesuppliersbtn
             // 
-            this.formSubMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.formSubMenu2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.formSubMenu2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.formSubMenu2.ForeColor = System.Drawing.Color.White;
-            this.formSubMenu2.Image = ((System.Drawing.Image)(resources.GetObject("formSubMenu2.Image")));
-            this.formSubMenu2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.formSubMenu2.Location = new System.Drawing.Point(-14, -34);
-            this.formSubMenu2.Margin = new System.Windows.Forms.Padding(0);
-            this.formSubMenu2.Name = "formSubMenu2";
-            this.formSubMenu2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.formSubMenu2.Size = new System.Drawing.Size(415, 122);
-            this.formSubMenu2.TabIndex = 2;
-            this.formSubMenu2.Text = "                Inventory";
-            this.formSubMenu2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.formSubMenu2.UseVisualStyleBackColor = false;
-            this.formSubMenu2.Click += new System.EventHandler(this.formSubMenu2_Click);
+            this.managesuppliersbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.managesuppliersbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.managesuppliersbtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.managesuppliersbtn.ForeColor = System.Drawing.Color.White;
+            this.managesuppliersbtn.Image = ((System.Drawing.Image)(resources.GetObject("managesuppliersbtn.Image")));
+            this.managesuppliersbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.managesuppliersbtn.Location = new System.Drawing.Point(-14, -13);
+            this.managesuppliersbtn.Margin = new System.Windows.Forms.Padding(0);
+            this.managesuppliersbtn.Name = "managesuppliersbtn";
+            this.managesuppliersbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.managesuppliersbtn.Size = new System.Drawing.Size(415, 89);
+            this.managesuppliersbtn.TabIndex = 2;
+            this.managesuppliersbtn.Text = "              Manage Suppliers";
+            this.managesuppliersbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.managesuppliersbtn.UseVisualStyleBackColor = false;
+            this.managesuppliersbtn.Click += new System.EventHandler(this.formSubMenu2_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Location = new System.Drawing.Point(0, 250);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel3.Controls.Add(this.manageempbtn);
+            this.panel3.Location = new System.Drawing.Point(0, 61);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(363, 61);
             this.panel3.TabIndex = 14;
             // 
-            // button2
+            // allproductsbtn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-14, -35);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(415, 122);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "                Inventory";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.allproductsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.allproductsbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.allproductsbtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allproductsbtn.ForeColor = System.Drawing.Color.White;
+            this.allproductsbtn.Image = ((System.Drawing.Image)(resources.GetObject("allproductsbtn.Image")));
+            this.allproductsbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.allproductsbtn.Location = new System.Drawing.Point(-14, -19);
+            this.allproductsbtn.Margin = new System.Windows.Forms.Padding(0);
+            this.allproductsbtn.Name = "allproductsbtn";
+            this.allproductsbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.allproductsbtn.Size = new System.Drawing.Size(415, 89);
+            this.allproductsbtn.TabIndex = 12;
+            this.allproductsbtn.Text = "                All Products";
+            this.allproductsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.allproductsbtn.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.formSubMenu1);
-            this.panel4.Location = new System.Drawing.Point(0, 311);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel4.Controls.Add(this.adminbtn);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(363, 61);
             this.panel4.TabIndex = 14;
             // 
-            // button4
+            // manageempbtn
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-14, -34);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(415, 122);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "                Inventory";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // formSubMenu1
-            // 
-            this.formSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.formSubMenu1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.formSubMenu1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.formSubMenu1.ForeColor = System.Drawing.Color.White;
-            this.formSubMenu1.Image = ((System.Drawing.Image)(resources.GetObject("formSubMenu1.Image")));
-            this.formSubMenu1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.formSubMenu1.Location = new System.Drawing.Point(276, -15);
-            this.formSubMenu1.Margin = new System.Windows.Forms.Padding(0);
-            this.formSubMenu1.Name = "formSubMenu1";
-            this.formSubMenu1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.formSubMenu1.Size = new System.Drawing.Size(415, 32);
-            this.formSubMenu1.TabIndex = 2;
-            this.formSubMenu1.Text = "                Manage";
-            this.formSubMenu1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.formSubMenu1.UseVisualStyleBackColor = false;
-            this.formSubMenu1.Click += new System.EventHandler(this.formSubMenu1_Click);
+            this.manageempbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.manageempbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageempbtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageempbtn.ForeColor = System.Drawing.Color.White;
+            this.manageempbtn.Image = ((System.Drawing.Image)(resources.GetObject("manageempbtn.Image")));
+            this.manageempbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageempbtn.Location = new System.Drawing.Point(-14, -12);
+            this.manageempbtn.Margin = new System.Windows.Forms.Padding(0);
+            this.manageempbtn.Name = "manageempbtn";
+            this.manageempbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.manageempbtn.Size = new System.Drawing.Size(415, 89);
+            this.manageempbtn.TabIndex = 2;
+            this.manageempbtn.Text = "             Manage Employees";
+            this.manageempbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageempbtn.UseVisualStyleBackColor = false;
+            this.manageempbtn.Click += new System.EventHandler(this.formSubMenu1_Click);
             // 
             // pnLogout
             // 
             this.pnLogout.Controls.Add(this.button5);
-            this.pnLogout.Location = new System.Drawing.Point(3, 218);
+            this.pnLogout.Location = new System.Drawing.Point(3, 213);
             this.pnLogout.Name = "pnLogout";
             this.pnLogout.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.pnLogout.Size = new System.Drawing.Size(363, 64);
+            this.pnLogout.Size = new System.Drawing.Size(363, 58);
             this.pnLogout.TabIndex = 8;
             // 
             // button5
@@ -359,7 +349,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-17, -27);
+            this.button5.Location = new System.Drawing.Point(-17, -34);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.button5.Size = new System.Drawing.Size(415, 122);
@@ -371,11 +361,11 @@
             // 
             // pnBillings
             // 
-            this.pnBillings.Controls.Add(this.billingsbtn);
-            this.pnBillings.Location = new System.Drawing.Point(3, 288);
+            this.pnBillings.Controls.Add(this.button6);
+            this.pnBillings.Location = new System.Drawing.Point(3, 409);
             this.pnBillings.Name = "pnBillings";
             this.pnBillings.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.pnBillings.Size = new System.Drawing.Size(363, 64);
+            this.pnBillings.Size = new System.Drawing.Size(363, 58);
             this.pnBillings.TabIndex = 5;
             // 
             // billingsbtn
@@ -386,7 +376,7 @@
             this.billingsbtn.ForeColor = System.Drawing.Color.White;
             this.billingsbtn.Image = ((System.Drawing.Image)(resources.GetObject("billingsbtn.Image")));
             this.billingsbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.billingsbtn.Location = new System.Drawing.Point(-17, -21);
+            this.billingsbtn.Location = new System.Drawing.Point(-17, -34);
             this.billingsbtn.Name = "billingsbtn";
             this.billingsbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.billingsbtn.Size = new System.Drawing.Size(415, 122);
@@ -398,11 +388,11 @@
             // 
             // pnSettings
             // 
-            this.pnSettings.Controls.Add(this.settingsbtn);
-            this.pnSettings.Location = new System.Drawing.Point(3, 358);
+            this.pnSettings.Controls.Add(this.billingsbtn);
+            this.pnSettings.Location = new System.Drawing.Point(3, 277);
             this.pnSettings.Name = "pnSettings";
             this.pnSettings.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.pnSettings.Size = new System.Drawing.Size(363, 64);
+            this.pnSettings.Size = new System.Drawing.Size(363, 60);
             this.pnSettings.TabIndex = 4;
             // 
             // settingsbtn
@@ -413,7 +403,7 @@
             this.settingsbtn.ForeColor = System.Drawing.Color.White;
             this.settingsbtn.Image = ((System.Drawing.Image)(resources.GetObject("settingsbtn.Image")));
             this.settingsbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsbtn.Location = new System.Drawing.Point(-17, -19);
+            this.settingsbtn.Location = new System.Drawing.Point(-17, -36);
             this.settingsbtn.Name = "settingsbtn";
             this.settingsbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.settingsbtn.Size = new System.Drawing.Size(415, 122);
@@ -425,11 +415,11 @@
             // 
             // pnTables
             // 
-            this.pnTables.Controls.Add(this.button6);
-            this.pnTables.Location = new System.Drawing.Point(3, 428);
+            this.pnTables.Controls.Add(this.settingsbtn);
+            this.pnTables.Location = new System.Drawing.Point(3, 343);
             this.pnTables.Name = "pnTables";
             this.pnTables.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.pnTables.Size = new System.Drawing.Size(363, 64);
+            this.pnTables.Size = new System.Drawing.Size(363, 60);
             this.pnTables.TabIndex = 10;
             // 
             // button6
@@ -440,7 +430,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(-17, -22);
+            this.button6.Location = new System.Drawing.Point(-17, -38);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(415, 122);
@@ -460,11 +450,39 @@
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
+            // manageproductbtn
+            // 
+            this.manageproductbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.manageproductbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageproductbtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageproductbtn.ForeColor = System.Drawing.Color.White;
+            this.manageproductbtn.Image = ((System.Drawing.Image)(resources.GetObject("manageproductbtn.Image")));
+            this.manageproductbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageproductbtn.Location = new System.Drawing.Point(-14, -19);
+            this.manageproductbtn.Margin = new System.Windows.Forms.Padding(0);
+            this.manageproductbtn.Name = "manageproductbtn";
+            this.manageproductbtn.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.manageproductbtn.Size = new System.Drawing.Size(415, 89);
+            this.manageproductbtn.TabIndex = 15;
+            this.manageproductbtn.Text = "              Manage Products";
+            this.manageproductbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageproductbtn.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel5.Controls.Add(this.manageproductbtn);
+            this.panel5.Location = new System.Drawing.Point(0, 247);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(363, 61);
+            this.panel5.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1327, 962);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.ClientSize = new System.Drawing.Size(1669, 962);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -486,6 +504,7 @@
             this.pnBillings.ResumeLayout(false);
             this.pnSettings.ResumeLayout(false);
             this.pnTables.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -505,9 +524,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.FlowLayoutPanel menuContainer;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button formSubMenu2;
+        private System.Windows.Forms.Button managesuppliersbtn;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button formSubMenu1;
+        private System.Windows.Forms.Button manageempbtn;
         /*
         private System.Windows.Forms.Button formSubMenu3;
         private System.Windows.Forms.Button formSubMenu4;
@@ -518,14 +537,15 @@
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Panel pnTables;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button shiftsandrolesbtn;
+        private System.Windows.Forms.Button allproductsbtn;
+        private System.Windows.Forms.Button expensesbtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button manageproductbtn;
     }
 }
 
