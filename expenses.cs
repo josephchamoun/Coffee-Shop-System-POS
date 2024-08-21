@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace summer2
 {
-    public partial class UserControl2 : UserControl
+    public partial class expenses : Form
     {
-        public UserControl2()
+        public expenses()
         {
             InitializeComponent();
         }

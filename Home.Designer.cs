@@ -28,20 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.searchbar = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControl21 = new summer2.UserControl2();
-            this.userControl22 = new summer2.UserControl2();
-            this.userControl23 = new summer2.UserControl2();
-            this.userControl24 = new summer2.UserControl2();
-            this.userControl26 = new summer2.UserControl2();
-            this.userControl25 = new summer2.UserControl2();
-            this.userControl28 = new summer2.UserControl2();
-            this.userControl29 = new summer2.UserControl2();
-            this.userControl210 = new summer2.UserControl2();
             this.label1 = new System.Windows.Forms.Label();
-            this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
             this.checkoutPanel = new System.Windows.Forms.Panel();
+            this.displayitems = new System.Windows.Forms.FlowLayoutPanel();
             this.totallbprice = new System.Windows.Forms.Label();
             this.price2 = new System.Windows.Forms.Label();
             this.price1 = new System.Windows.Forms.Label();
@@ -55,46 +45,33 @@
             this.resultnum = new System.Windows.Forms.Label();
             this.coffeemenu = new System.Windows.Forms.Label();
             this.menuFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControl32 = new summer2.UserControl3();
-            this.userControl33 = new summer2.UserControl3();
-            this.userControl34 = new summer2.UserControl3();
-            this.userControl35 = new summer2.UserControl3();
-            this.userControl36 = new summer2.UserControl3();
-            this.userControl31 = new summer2.UserControl3();
-            this.userControl37 = new summer2.UserControl3();
-            this.userControl38 = new summer2.UserControl3();
-            this.userControl39 = new summer2.UserControl3();
-            this.userControl310 = new summer2.UserControl3();
+            this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
+            this.searchbar = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.itemUS1 = new summer2.itemUS();
+            this.itemUS2 = new summer2.itemUS();
+            this.itemUS3 = new summer2.itemUS();
+            this.itemUS4 = new summer2.itemUS();
+            this.checkoutitemsUS1 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS2 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS3 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS5 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS6 = new summer2.checkoutitemsUS();
+            this.userControl21 = new summer2.categoryUS();
+            this.userControl22 = new summer2.categoryUS();
+            this.userControl23 = new summer2.categoryUS();
+            this.userControl24 = new summer2.categoryUS();
+            this.userControl26 = new summer2.categoryUS();
+            this.userControl25 = new summer2.categoryUS();
+            this.userControl28 = new summer2.categoryUS();
+            this.userControl29 = new summer2.categoryUS();
+            this.userControl210 = new summer2.categoryUS();
+            this.checkoutitemsUS4 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS7 = new summer2.checkoutitemsUS();
             this.flowLayoutPanel1.SuspendLayout();
             this.checkoutPanel.SuspendLayout();
+            this.displayitems.SuspendLayout();
             this.menuFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // searchbar
-            // 
-            this.searchbar.BackColor = System.Drawing.Color.Transparent;
-            this.searchbar.BorderColor = System.Drawing.Color.LightGray;
-            this.searchbar.BorderRadius = 15;
-            this.searchbar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.searchbar.DefaultText = "";
-            this.searchbar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.searchbar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.searchbar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchbar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchbar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
-            this.searchbar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchbar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.searchbar.ForeColor = System.Drawing.Color.Black;
-            this.searchbar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchbar.IconLeft = global::summer2.Properties.Resources.icons8_search_24;
-            this.searchbar.Location = new System.Drawing.Point(926, 31);
-            this.searchbar.Name = "searchbar";
-            this.searchbar.PasswordChar = '\0';
-            this.searchbar.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.searchbar.PlaceholderText = "Search";
-            this.searchbar.SelectedText = "";
-            this.searchbar.Size = new System.Drawing.Size(331, 36);
-            this.searchbar.TabIndex = 5;
             // 
             // flowLayoutPanel1
             // 
@@ -114,69 +91,6 @@
             this.flowLayoutPanel1.TabIndex = 7;
             this.flowLayoutPanel1.WrapContents = false;
             // 
-            // userControl21
-            // 
-            this.userControl21.Location = new System.Drawing.Point(3, 3);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(150, 155);
-            this.userControl21.TabIndex = 0;
-            // 
-            // userControl22
-            // 
-            this.userControl22.Location = new System.Drawing.Point(159, 3);
-            this.userControl22.Name = "userControl22";
-            this.userControl22.Size = new System.Drawing.Size(150, 155);
-            this.userControl22.TabIndex = 1;
-            // 
-            // userControl23
-            // 
-            this.userControl23.Location = new System.Drawing.Point(315, 3);
-            this.userControl23.Name = "userControl23";
-            this.userControl23.Size = new System.Drawing.Size(150, 155);
-            this.userControl23.TabIndex = 2;
-            // 
-            // userControl24
-            // 
-            this.userControl24.Location = new System.Drawing.Point(471, 3);
-            this.userControl24.Name = "userControl24";
-            this.userControl24.Size = new System.Drawing.Size(150, 155);
-            this.userControl24.TabIndex = 3;
-            // 
-            // userControl26
-            // 
-            this.userControl26.Location = new System.Drawing.Point(627, 3);
-            this.userControl26.Name = "userControl26";
-            this.userControl26.Size = new System.Drawing.Size(150, 155);
-            this.userControl26.TabIndex = 5;
-            // 
-            // userControl25
-            // 
-            this.userControl25.Location = new System.Drawing.Point(783, 3);
-            this.userControl25.Name = "userControl25";
-            this.userControl25.Size = new System.Drawing.Size(150, 155);
-            this.userControl25.TabIndex = 6;
-            // 
-            // userControl28
-            // 
-            this.userControl28.Location = new System.Drawing.Point(939, 3);
-            this.userControl28.Name = "userControl28";
-            this.userControl28.Size = new System.Drawing.Size(150, 155);
-            this.userControl28.TabIndex = 8;
-            // 
-            // userControl29
-            // 
-            this.userControl29.Location = new System.Drawing.Point(1095, 3);
-            this.userControl29.Name = "userControl29";
-            this.userControl29.Size = new System.Drawing.Size(150, 155);
-            this.userControl29.TabIndex = 9;
-            // 
-            // userControl210
-            // 
-            this.userControl210.Location = new System.Drawing.Point(1251, 3);
-            this.userControl210.Name = "userControl210";
-            this.userControl210.Size = new System.Drawing.Size(150, 155);
-            this.userControl210.TabIndex = 10;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -188,26 +102,10 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Welcome to Coffee Shop Station";
             // 
-            // addButton
-            // 
-            this.addButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Image = global::summer2.Properties.Resources.icons8_plus_24;
-            this.addButton.Location = new System.Drawing.Point(1273, 157);
-            this.addButton.Name = "addButton";
-            this.addButton.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.addButton.Size = new System.Drawing.Size(40, 40);
-            this.addButton.TabIndex = 26;
-            // 
             // checkoutPanel
             // 
-            this.checkoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
+            this.checkoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutPanel.Controls.Add(this.displayitems);
             this.checkoutPanel.Controls.Add(this.totallbprice);
             this.checkoutPanel.Controls.Add(this.price2);
             this.checkoutPanel.Controls.Add(this.price1);
@@ -222,13 +120,30 @@
             this.checkoutPanel.Name = "checkoutPanel";
             this.checkoutPanel.Size = new System.Drawing.Size(466, 782);
             this.checkoutPanel.TabIndex = 27;
+            this.checkoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.checkoutPanel_Paint);
+            // 
+            // displayitems
+            // 
+            this.displayitems.AutoScroll = true;
+            this.displayitems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.displayitems.Controls.Add(this.checkoutitemsUS1);
+            this.displayitems.Controls.Add(this.checkoutitemsUS2);
+            this.displayitems.Controls.Add(this.checkoutitemsUS3);
+            this.displayitems.Controls.Add(this.checkoutitemsUS5);
+            this.displayitems.Controls.Add(this.checkoutitemsUS6);
+            this.displayitems.Controls.Add(this.checkoutitemsUS4);
+            this.displayitems.Controls.Add(this.checkoutitemsUS7);
+            this.displayitems.Location = new System.Drawing.Point(27, 99);
+            this.displayitems.Name = "displayitems";
+            this.displayitems.Size = new System.Drawing.Size(423, 387);
+            this.displayitems.TabIndex = 34;
             // 
             // totallbprice
             // 
             this.totallbprice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.totallbprice.AutoSize = true;
             this.totallbprice.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totallbprice.ForeColor = System.Drawing.Color.White;
+            this.totallbprice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.totallbprice.Location = new System.Drawing.Point(361, 625);
             this.totallbprice.Name = "totallbprice";
             this.totallbprice.Size = new System.Drawing.Size(89, 22);
@@ -240,7 +155,7 @@
             this.price2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.price2.AutoSize = true;
             this.price2.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.price2.ForeColor = System.Drawing.Color.White;
+            this.price2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.price2.Location = new System.Drawing.Point(380, 540);
             this.price2.Name = "price2";
             this.price2.Size = new System.Drawing.Size(70, 22);
@@ -252,7 +167,7 @@
             this.price1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.price1.AutoSize = true;
             this.price1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.price1.ForeColor = System.Drawing.Color.White;
+            this.price1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.price1.Location = new System.Drawing.Point(367, 503);
             this.price1.Name = "price1";
             this.price1.Size = new System.Drawing.Size(83, 22);
@@ -264,7 +179,7 @@
             this.totallb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.totallb.AutoSize = true;
             this.totallb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totallb.ForeColor = System.Drawing.Color.White;
+            this.totallb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.totallb.Location = new System.Drawing.Point(23, 625);
             this.totallb.Name = "totallb";
             this.totallb.Size = new System.Drawing.Size(62, 22);
@@ -276,7 +191,7 @@
             this.disclb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.disclb.AutoSize = true;
             this.disclb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disclb.ForeColor = System.Drawing.Color.White;
+            this.disclb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.disclb.Location = new System.Drawing.Point(23, 540);
             this.disclb.Name = "disclb";
             this.disclb.Size = new System.Drawing.Size(96, 22);
@@ -288,7 +203,7 @@
             this.subtotallb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.subtotallb.AutoSize = true;
             this.subtotallb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subtotallb.ForeColor = System.Drawing.Color.White;
+            this.subtotallb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.subtotallb.Location = new System.Drawing.Point(24, 503);
             this.subtotallb.Name = "subtotallb";
             this.subtotallb.Size = new System.Drawing.Size(91, 22);
@@ -298,13 +213,13 @@
             // checkoutbtn
             // 
             this.checkoutbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.checkoutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
+            this.checkoutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
             this.checkoutbtn.BorderRadius = 20;
             this.checkoutbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.checkoutbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.checkoutbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.checkoutbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.checkoutbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.checkoutbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.checkoutbtn.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkoutbtn.ForeColor = System.Drawing.Color.White;
             this.checkoutbtn.Location = new System.Drawing.Point(112, 717);
@@ -317,7 +232,7 @@
             // 
             this.empname.AutoSize = true;
             this.empname.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empname.ForeColor = System.Drawing.Color.White;
+            this.empname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.empname.Location = new System.Drawing.Point(22, 52);
             this.empname.Name = "empname";
             this.empname.Size = new System.Drawing.Size(170, 22);
@@ -328,7 +243,7 @@
             // 
             this.positionlb.AutoSize = true;
             this.positionlb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionlb.ForeColor = System.Drawing.Color.Silver;
+            this.positionlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.positionlb.Location = new System.Drawing.Point(22, 15);
             this.positionlb.Name = "positionlb";
             this.positionlb.Size = new System.Drawing.Size(83, 26);
@@ -371,117 +286,227 @@
             // menuFlowLayoutPanel
             // 
             this.menuFlowLayoutPanel.AutoScroll = true;
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl32);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl33);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl34);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl35);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl36);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl31);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl37);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl38);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl39);
-            this.menuFlowLayoutPanel.Controls.Add(this.userControl310);
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS1);
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS2);
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS3);
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS4);
             this.menuFlowLayoutPanel.Location = new System.Drawing.Point(20, 321);
             this.menuFlowLayoutPanel.Name = "menuFlowLayoutPanel";
             this.menuFlowLayoutPanel.Size = new System.Drawing.Size(1237, 441);
             this.menuFlowLayoutPanel.TabIndex = 31;
             // 
-            // userControl32
+            // addButton
             // 
-            this.userControl32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl32.Location = new System.Drawing.Point(10, 10);
-            this.userControl32.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl32.Name = "userControl32";
-            this.userControl32.Size = new System.Drawing.Size(439, 260);
-            this.userControl32.TabIndex = 20;
+            this.addButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.addButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.addButton.Image = global::summer2.Properties.Resources.icons8_plus_24;
+            this.addButton.Location = new System.Drawing.Point(1273, 157);
+            this.addButton.Name = "addButton";
+            this.addButton.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.addButton.Size = new System.Drawing.Size(40, 40);
+            this.addButton.TabIndex = 26;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // userControl33
+            // searchbar
             // 
-            this.userControl33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl33.Location = new System.Drawing.Point(469, 10);
-            this.userControl33.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl33.Name = "userControl33";
-            this.userControl33.Size = new System.Drawing.Size(439, 260);
-            this.userControl33.TabIndex = 21;
+            this.searchbar.BackColor = System.Drawing.Color.Transparent;
+            this.searchbar.BorderColor = System.Drawing.Color.RosyBrown;
+            this.searchbar.BorderRadius = 15;
+            this.searchbar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchbar.DefaultText = "";
+            this.searchbar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchbar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchbar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchbar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchbar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.searchbar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchbar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.searchbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.searchbar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchbar.IconLeft = global::summer2.Properties.Resources.icons8_search_24;
+            this.searchbar.Location = new System.Drawing.Point(926, 31);
+            this.searchbar.Name = "searchbar";
+            this.searchbar.PasswordChar = '\0';
+            this.searchbar.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.searchbar.PlaceholderText = "Search";
+            this.searchbar.SelectedText = "";
+            this.searchbar.Size = new System.Drawing.Size(331, 36);
+            this.searchbar.TabIndex = 5;
+            this.searchbar.TextChanged += new System.EventHandler(this.searchbar_TextChanged);
             // 
-            // userControl34
+            // itemUS1
             // 
-            this.userControl34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl34.Location = new System.Drawing.Point(10, 290);
-            this.userControl34.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl34.Name = "userControl34";
-            this.userControl34.Size = new System.Drawing.Size(439, 260);
-            this.userControl34.TabIndex = 22;
+            this.itemUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS1.Location = new System.Drawing.Point(3, 3);
+            this.itemUS1.Name = "itemUS1";
+            this.itemUS1.Size = new System.Drawing.Size(439, 260);
+            this.itemUS1.TabIndex = 0;
             // 
-            // userControl35
+            // itemUS2
             // 
-            this.userControl35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl35.Location = new System.Drawing.Point(469, 290);
-            this.userControl35.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl35.Name = "userControl35";
-            this.userControl35.Size = new System.Drawing.Size(439, 260);
-            this.userControl35.TabIndex = 23;
+            this.itemUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS2.Location = new System.Drawing.Point(448, 3);
+            this.itemUS2.Name = "itemUS2";
+            this.itemUS2.Size = new System.Drawing.Size(439, 260);
+            this.itemUS2.TabIndex = 1;
             // 
-            // userControl36
+            // itemUS3
             // 
-            this.userControl36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl36.Location = new System.Drawing.Point(10, 570);
-            this.userControl36.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl36.Name = "userControl36";
-            this.userControl36.Size = new System.Drawing.Size(439, 260);
-            this.userControl36.TabIndex = 24;
+            this.itemUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS3.Location = new System.Drawing.Point(3, 269);
+            this.itemUS3.Name = "itemUS3";
+            this.itemUS3.Size = new System.Drawing.Size(439, 260);
+            this.itemUS3.TabIndex = 2;
             // 
-            // userControl31
+            // itemUS4
             // 
-            this.userControl31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl31.Location = new System.Drawing.Point(469, 570);
-            this.userControl31.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(439, 260);
-            this.userControl31.TabIndex = 25;
+            this.itemUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS4.Location = new System.Drawing.Point(448, 269);
+            this.itemUS4.Name = "itemUS4";
+            this.itemUS4.Size = new System.Drawing.Size(439, 260);
+            this.itemUS4.TabIndex = 3;
             // 
-            // userControl37
+            // checkoutitemsUS1
             // 
-            this.userControl37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl37.Location = new System.Drawing.Point(10, 850);
-            this.userControl37.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl37.Name = "userControl37";
-            this.userControl37.Size = new System.Drawing.Size(439, 260);
-            this.userControl37.TabIndex = 26;
+            this.checkoutitemsUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS1.Location = new System.Drawing.Point(3, 3);
+            this.checkoutitemsUS1.Name = "checkoutitemsUS1";
+            this.checkoutitemsUS1.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS1.TabIndex = 0;
             // 
-            // userControl38
+            // checkoutitemsUS2
             // 
-            this.userControl38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl38.Location = new System.Drawing.Point(469, 850);
-            this.userControl38.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl38.Name = "userControl38";
-            this.userControl38.Size = new System.Drawing.Size(439, 260);
-            this.userControl38.TabIndex = 27;
+            this.checkoutitemsUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS2.Location = new System.Drawing.Point(3, 114);
+            this.checkoutitemsUS2.Name = "checkoutitemsUS2";
+            this.checkoutitemsUS2.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS2.TabIndex = 1;
             // 
-            // userControl39
+            // checkoutitemsUS3
             // 
-            this.userControl39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl39.Location = new System.Drawing.Point(10, 1130);
-            this.userControl39.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl39.Name = "userControl39";
-            this.userControl39.Size = new System.Drawing.Size(439, 260);
-            this.userControl39.TabIndex = 28;
+            this.checkoutitemsUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS3.Location = new System.Drawing.Point(3, 225);
+            this.checkoutitemsUS3.Name = "checkoutitemsUS3";
+            this.checkoutitemsUS3.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS3.TabIndex = 2;
             // 
-            // userControl310
+            // checkoutitemsUS5
             // 
-            this.userControl310.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.userControl310.Location = new System.Drawing.Point(469, 1130);
-            this.userControl310.Margin = new System.Windows.Forms.Padding(10);
-            this.userControl310.Name = "userControl310";
-            this.userControl310.Size = new System.Drawing.Size(439, 260);
-            this.userControl310.TabIndex = 29;
+            this.checkoutitemsUS5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS5.Location = new System.Drawing.Point(3, 336);
+            this.checkoutitemsUS5.Name = "checkoutitemsUS5";
+            this.checkoutitemsUS5.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS5.TabIndex = 4;
+            // 
+            // checkoutitemsUS6
+            // 
+            this.checkoutitemsUS6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS6.Location = new System.Drawing.Point(3, 447);
+            this.checkoutitemsUS6.Name = "checkoutitemsUS6";
+            this.checkoutitemsUS6.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS6.TabIndex = 5;
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl21.Location = new System.Drawing.Point(3, 3);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(150, 155);
+            this.userControl21.TabIndex = 0;
+            // 
+            // userControl22
+            // 
+            this.userControl22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl22.Location = new System.Drawing.Point(159, 3);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(150, 155);
+            this.userControl22.TabIndex = 1;
+            // 
+            // userControl23
+            // 
+            this.userControl23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl23.Location = new System.Drawing.Point(315, 3);
+            this.userControl23.Name = "userControl23";
+            this.userControl23.Size = new System.Drawing.Size(150, 155);
+            this.userControl23.TabIndex = 2;
+            // 
+            // userControl24
+            // 
+            this.userControl24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl24.Location = new System.Drawing.Point(471, 3);
+            this.userControl24.Name = "userControl24";
+            this.userControl24.Size = new System.Drawing.Size(150, 155);
+            this.userControl24.TabIndex = 3;
+            // 
+            // userControl26
+            // 
+            this.userControl26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl26.Location = new System.Drawing.Point(627, 3);
+            this.userControl26.Name = "userControl26";
+            this.userControl26.Size = new System.Drawing.Size(150, 155);
+            this.userControl26.TabIndex = 5;
+            // 
+            // userControl25
+            // 
+            this.userControl25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl25.Location = new System.Drawing.Point(783, 3);
+            this.userControl25.Name = "userControl25";
+            this.userControl25.Size = new System.Drawing.Size(150, 155);
+            this.userControl25.TabIndex = 6;
+            // 
+            // userControl28
+            // 
+            this.userControl28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl28.Location = new System.Drawing.Point(939, 3);
+            this.userControl28.Name = "userControl28";
+            this.userControl28.Size = new System.Drawing.Size(150, 155);
+            this.userControl28.TabIndex = 8;
+            // 
+            // userControl29
+            // 
+            this.userControl29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl29.Location = new System.Drawing.Point(1095, 3);
+            this.userControl29.Name = "userControl29";
+            this.userControl29.Size = new System.Drawing.Size(150, 155);
+            this.userControl29.TabIndex = 9;
+            // 
+            // userControl210
+            // 
+            this.userControl210.Location = new System.Drawing.Point(1251, 3);
+            this.userControl210.Name = "userControl210";
+            this.userControl210.Size = new System.Drawing.Size(150, 155);
+            this.userControl210.TabIndex = 10;
+            // 
+            // checkoutitemsUS4
+            // 
+            this.checkoutitemsUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS4.Location = new System.Drawing.Point(3, 558);
+            this.checkoutitemsUS4.Name = "checkoutitemsUS4";
+            this.checkoutitemsUS4.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS4.TabIndex = 6;
+            // 
+            // checkoutitemsUS7
+            // 
+            this.checkoutitemsUS7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS7.Location = new System.Drawing.Point(3, 669);
+            this.checkoutitemsUS7.Name = "checkoutitemsUS7";
+            this.checkoutitemsUS7.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS7.TabIndex = 7;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(1798, 782);
+            this.ControlBox = false;
             this.Controls.Add(this.menuFlowLayoutPanel);
             this.Controls.Add(this.coffeemenu);
             this.Controls.Add(this.resultnum);
@@ -492,12 +517,13 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.searchbar);
             this.Name = "Home";
-            this.Text = "Home";
+            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Home_Load);
             this.Resize += new System.EventHandler(this.Home_Resize);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.checkoutPanel.ResumeLayout(false);
             this.checkoutPanel.PerformLayout();
+            this.displayitems.ResumeLayout(false);
             this.menuFlowLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -523,27 +549,29 @@
         private System.Windows.Forms.Label price2;
         private System.Windows.Forms.Label price1;
         private System.Windows.Forms.Label label10;
-        private UserControl2 userControl21;
-        private UserControl2 userControl22;
-        private UserControl2 userControl23;
-        private UserControl2 userControl24;
-        private UserControl2 userControl26;
-        private UserControl2 userControl25;
-        private UserControl2 userControl28;
-        private UserControl2 userControl29;
+        private categoryUS userControl21;
+        private categoryUS userControl22;
+        private categoryUS userControl23;
+        private categoryUS userControl24;
+        private categoryUS userControl26;
+        private categoryUS userControl25;
+        private categoryUS userControl28;
+        private categoryUS userControl29;
         private System.Windows.Forms.Label resultnum;
         private System.Windows.Forms.Label coffeemenu;
         private System.Windows.Forms.FlowLayoutPanel menuFlowLayoutPanel;
-        private UserControl2 userControl210;
-        private UserControl3 userControl32;
-        private UserControl3 userControl33;
-        private UserControl3 userControl34;
-        private UserControl3 userControl35;
-        private UserControl3 userControl36;
-        private UserControl3 userControl31;
-        private UserControl3 userControl37;
-        private UserControl3 userControl38;
-        private UserControl3 userControl39;
-        private UserControl3 userControl310;
+        private categoryUS userControl210;
+        private itemUS itemUS1;
+        private itemUS itemUS2;
+        private itemUS itemUS3;
+        private itemUS itemUS4;
+        private System.Windows.Forms.FlowLayoutPanel displayitems;
+        private checkoutitemsUS checkoutitemsUS1;
+        private checkoutitemsUS checkoutitemsUS2;
+        private checkoutitemsUS checkoutitemsUS3;
+        private checkoutitemsUS checkoutitemsUS5;
+        private checkoutitemsUS checkoutitemsUS6;
+        private checkoutitemsUS checkoutitemsUS4;
+        private checkoutitemsUS checkoutitemsUS7;
     }
 }

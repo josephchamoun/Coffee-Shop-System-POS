@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace summer2
 {
-    public partial class UserControl1 : UserControl
+    public partial class employeeUS : UserControl
     {
-        public UserControl1()
+        public employeeUS()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace summer2
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)// ta nemhe l user control li nehna 3le
         {
             // Access the parent form of UserControl1
-            Form1 parentForm = this.ParentForm as Form1;
+            addemployees parentForm = this.ParentForm as addemployees;
 
             // Access the FlowLayoutPanel from the parent form
             FlowLayoutPanel flowLayoutPanel = parentForm.flowLayoutPanel2;
@@ -64,3 +64,9 @@ namespace summer2
     }
 }
 // hide or remove the contextmenustrip on_mouse_scroll event
+/*Top-Left: Profile picture icon.
+Top-Right: Ellipsis for more options.
+Middle-Left: Icons and corresponding text (phone, email, etc.) stacked vertically.
+Middle-Right: Job title with a briefcase icon.
+Bottom: Status badge or small graph icon, possibly with a subtle background pattern.*/
+//Display summary statistics such as the total number of employees, number of employees per department, or other key metrics

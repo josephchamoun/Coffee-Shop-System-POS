@@ -1,6 +1,6 @@
 ﻿namespace summer2
 {
-    partial class Form2
+    partial class addemployeescard
     {
         /// <summary>
         /// Required designer variable.
