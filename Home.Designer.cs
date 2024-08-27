@@ -29,9 +29,25 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControl21 = new summer2.categoryUS();
+            this.userControl22 = new summer2.categoryUS();
+            this.userControl23 = new summer2.categoryUS();
+            this.userControl24 = new summer2.categoryUS();
+            this.userControl26 = new summer2.categoryUS();
+            this.userControl25 = new summer2.categoryUS();
+            this.userControl28 = new summer2.categoryUS();
+            this.userControl29 = new summer2.categoryUS();
+            this.userControl210 = new summer2.categoryUS();
             this.label1 = new System.Windows.Forms.Label();
             this.checkoutPanel = new System.Windows.Forms.Panel();
             this.displayitems = new System.Windows.Forms.FlowLayoutPanel();
+            this.checkoutitemsUS1 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS2 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS3 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS5 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS6 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS4 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS7 = new summer2.checkoutitemsUS();
             this.totallbprice = new System.Windows.Forms.Label();
             this.price2 = new System.Windows.Forms.Label();
             this.price1 = new System.Windows.Forms.Label();
@@ -45,28 +61,13 @@
             this.resultnum = new System.Windows.Forms.Label();
             this.coffeemenu = new System.Windows.Forms.Label();
             this.menuFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
-            this.searchbar = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.itemUS1 = new summer2.itemUS();
             this.itemUS2 = new summer2.itemUS();
             this.itemUS3 = new summer2.itemUS();
             this.itemUS4 = new summer2.itemUS();
-            this.checkoutitemsUS1 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS2 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS3 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS5 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS6 = new summer2.checkoutitemsUS();
-            this.userControl21 = new summer2.categoryUS();
-            this.userControl22 = new summer2.categoryUS();
-            this.userControl23 = new summer2.categoryUS();
-            this.userControl24 = new summer2.categoryUS();
-            this.userControl26 = new summer2.categoryUS();
-            this.userControl25 = new summer2.categoryUS();
-            this.userControl28 = new summer2.categoryUS();
-            this.userControl29 = new summer2.categoryUS();
-            this.userControl210 = new summer2.categoryUS();
-            this.checkoutitemsUS4 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS7 = new summer2.checkoutitemsUS();
+            this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
+            this.searchbar = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.additems = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
             this.flowLayoutPanel1.SuspendLayout();
             this.checkoutPanel.SuspendLayout();
             this.displayitems.SuspendLayout();
@@ -90,328 +91,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1245, 193);
             this.flowLayoutPanel1.TabIndex = 7;
             this.flowLayoutPanel1.WrapContents = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 30);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Welcome to Coffee Shop Station";
-            // 
-            // checkoutPanel
-            // 
-            this.checkoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutPanel.Controls.Add(this.displayitems);
-            this.checkoutPanel.Controls.Add(this.totallbprice);
-            this.checkoutPanel.Controls.Add(this.price2);
-            this.checkoutPanel.Controls.Add(this.price1);
-            this.checkoutPanel.Controls.Add(this.totallb);
-            this.checkoutPanel.Controls.Add(this.disclb);
-            this.checkoutPanel.Controls.Add(this.subtotallb);
-            this.checkoutPanel.Controls.Add(this.checkoutbtn);
-            this.checkoutPanel.Controls.Add(this.empname);
-            this.checkoutPanel.Controls.Add(this.positionlb);
-            this.checkoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.checkoutPanel.Location = new System.Drawing.Point(1332, 0);
-            this.checkoutPanel.Name = "checkoutPanel";
-            this.checkoutPanel.Size = new System.Drawing.Size(466, 782);
-            this.checkoutPanel.TabIndex = 27;
-            this.checkoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.checkoutPanel_Paint);
-            // 
-            // displayitems
-            // 
-            this.displayitems.AutoScroll = true;
-            this.displayitems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.displayitems.Controls.Add(this.checkoutitemsUS1);
-            this.displayitems.Controls.Add(this.checkoutitemsUS2);
-            this.displayitems.Controls.Add(this.checkoutitemsUS3);
-            this.displayitems.Controls.Add(this.checkoutitemsUS5);
-            this.displayitems.Controls.Add(this.checkoutitemsUS6);
-            this.displayitems.Controls.Add(this.checkoutitemsUS4);
-            this.displayitems.Controls.Add(this.checkoutitemsUS7);
-            this.displayitems.Location = new System.Drawing.Point(27, 99);
-            this.displayitems.Name = "displayitems";
-            this.displayitems.Size = new System.Drawing.Size(423, 387);
-            this.displayitems.TabIndex = 34;
-            // 
-            // totallbprice
-            // 
-            this.totallbprice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.totallbprice.AutoSize = true;
-            this.totallbprice.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totallbprice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.totallbprice.Location = new System.Drawing.Point(361, 625);
-            this.totallbprice.Name = "totallbprice";
-            this.totallbprice.Size = new System.Drawing.Size(89, 22);
-            this.totallbprice.TabIndex = 33;
-            this.totallbprice.Text = "20.00 $";
-            // 
-            // price2
-            // 
-            this.price2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.price2.AutoSize = true;
-            this.price2.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.price2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.price2.Location = new System.Drawing.Point(380, 540);
-            this.price2.Name = "price2";
-            this.price2.Size = new System.Drawing.Size(70, 22);
-            this.price2.TabIndex = 32;
-            this.price2.Text = "1.50 $";
-            // 
-            // price1
-            // 
-            this.price1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.price1.AutoSize = true;
-            this.price1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.price1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.price1.Location = new System.Drawing.Point(367, 503);
-            this.price1.Name = "price1";
-            this.price1.Size = new System.Drawing.Size(83, 22);
-            this.price1.TabIndex = 31;
-            this.price1.Text = "21.50 $";
-            // 
-            // totallb
-            // 
-            this.totallb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.totallb.AutoSize = true;
-            this.totallb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totallb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.totallb.Location = new System.Drawing.Point(23, 625);
-            this.totallb.Name = "totallb";
-            this.totallb.Size = new System.Drawing.Size(62, 22);
-            this.totallb.TabIndex = 30;
-            this.totallb.Text = "Total";
-            // 
-            // disclb
-            // 
-            this.disclb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.disclb.AutoSize = true;
-            this.disclb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disclb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.disclb.Location = new System.Drawing.Point(23, 540);
-            this.disclb.Name = "disclb";
-            this.disclb.Size = new System.Drawing.Size(96, 22);
-            this.disclb.TabIndex = 29;
-            this.disclb.Text = "Discount";
-            // 
-            // subtotallb
-            // 
-            this.subtotallb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.subtotallb.AutoSize = true;
-            this.subtotallb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subtotallb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.subtotallb.Location = new System.Drawing.Point(24, 503);
-            this.subtotallb.Name = "subtotallb";
-            this.subtotallb.Size = new System.Drawing.Size(91, 22);
-            this.subtotallb.TabIndex = 28;
-            this.subtotallb.Text = "Subtotal";
-            // 
-            // checkoutbtn
-            // 
-            this.checkoutbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.checkoutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutbtn.BorderRadius = 20;
-            this.checkoutbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.checkoutbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.checkoutbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.checkoutbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.checkoutbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.checkoutbtn.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkoutbtn.ForeColor = System.Drawing.Color.White;
-            this.checkoutbtn.Location = new System.Drawing.Point(112, 717);
-            this.checkoutbtn.Name = "checkoutbtn";
-            this.checkoutbtn.Size = new System.Drawing.Size(266, 45);
-            this.checkoutbtn.TabIndex = 27;
-            this.checkoutbtn.Text = "Checkout";
-            // 
-            // empname
-            // 
-            this.empname.AutoSize = true;
-            this.empname.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.empname.Location = new System.Drawing.Point(22, 52);
-            this.empname.Name = "empname";
-            this.empname.Size = new System.Drawing.Size(170, 22);
-            this.empname.TabIndex = 26;
-            this.empname.Text = "Joseph Chamoun";
-            // 
-            // positionlb
-            // 
-            this.positionlb.AutoSize = true;
-            this.positionlb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.positionlb.Location = new System.Drawing.Point(22, 15);
-            this.positionlb.Name = "positionlb";
-            this.positionlb.Size = new System.Drawing.Size(83, 26);
-            this.positionlb.TabIndex = 25;
-            this.positionlb.Text = "Admin";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(8, 53);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(165, 22);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Choose a Category";
-            // 
-            // resultnum
-            // 
-            this.resultnum.AutoSize = true;
-            this.resultnum.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultnum.ForeColor = System.Drawing.Color.Silver;
-            this.resultnum.Location = new System.Drawing.Point(1164, 296);
-            this.resultnum.Name = "resultnum";
-            this.resultnum.Size = new System.Drawing.Size(93, 22);
-            this.resultnum.TabIndex = 29;
-            this.resultnum.Text = "13 results";
-            // 
-            // coffeemenu
-            // 
-            this.coffeemenu.AutoSize = true;
-            this.coffeemenu.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coffeemenu.ForeColor = System.Drawing.Color.White;
-            this.coffeemenu.Location = new System.Drawing.Point(15, 292);
-            this.coffeemenu.Name = "coffeemenu";
-            this.coffeemenu.Size = new System.Drawing.Size(150, 26);
-            this.coffeemenu.TabIndex = 30;
-            this.coffeemenu.Text = "Coffee Menu";
-            // 
-            // menuFlowLayoutPanel
-            // 
-            this.menuFlowLayoutPanel.AutoScroll = true;
-            this.menuFlowLayoutPanel.Controls.Add(this.itemUS1);
-            this.menuFlowLayoutPanel.Controls.Add(this.itemUS2);
-            this.menuFlowLayoutPanel.Controls.Add(this.itemUS3);
-            this.menuFlowLayoutPanel.Controls.Add(this.itemUS4);
-            this.menuFlowLayoutPanel.Location = new System.Drawing.Point(20, 321);
-            this.menuFlowLayoutPanel.Name = "menuFlowLayoutPanel";
-            this.menuFlowLayoutPanel.Size = new System.Drawing.Size(1237, 441);
-            this.menuFlowLayoutPanel.TabIndex = 31;
-            // 
-            // addButton
-            // 
-            this.addButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.addButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addButton.Image = global::summer2.Properties.Resources.icons8_plus_24;
-            this.addButton.Location = new System.Drawing.Point(1273, 157);
-            this.addButton.Name = "addButton";
-            this.addButton.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.addButton.Size = new System.Drawing.Size(40, 40);
-            this.addButton.TabIndex = 26;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // searchbar
-            // 
-            this.searchbar.BackColor = System.Drawing.Color.Transparent;
-            this.searchbar.BorderColor = System.Drawing.Color.RosyBrown;
-            this.searchbar.BorderRadius = 15;
-            this.searchbar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.searchbar.DefaultText = "";
-            this.searchbar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.searchbar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.searchbar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchbar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchbar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.searchbar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchbar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.searchbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.searchbar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchbar.IconLeft = global::summer2.Properties.Resources.icons8_search_24;
-            this.searchbar.Location = new System.Drawing.Point(926, 31);
-            this.searchbar.Name = "searchbar";
-            this.searchbar.PasswordChar = '\0';
-            this.searchbar.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.searchbar.PlaceholderText = "Search";
-            this.searchbar.SelectedText = "";
-            this.searchbar.Size = new System.Drawing.Size(331, 36);
-            this.searchbar.TabIndex = 5;
-            this.searchbar.TextChanged += new System.EventHandler(this.searchbar_TextChanged);
-            // 
-            // itemUS1
-            // 
-            this.itemUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS1.Location = new System.Drawing.Point(3, 3);
-            this.itemUS1.Name = "itemUS1";
-            this.itemUS1.Size = new System.Drawing.Size(439, 260);
-            this.itemUS1.TabIndex = 0;
-            // 
-            // itemUS2
-            // 
-            this.itemUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS2.Location = new System.Drawing.Point(448, 3);
-            this.itemUS2.Name = "itemUS2";
-            this.itemUS2.Size = new System.Drawing.Size(439, 260);
-            this.itemUS2.TabIndex = 1;
-            // 
-            // itemUS3
-            // 
-            this.itemUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS3.Location = new System.Drawing.Point(3, 269);
-            this.itemUS3.Name = "itemUS3";
-            this.itemUS3.Size = new System.Drawing.Size(439, 260);
-            this.itemUS3.TabIndex = 2;
-            // 
-            // itemUS4
-            // 
-            this.itemUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS4.Location = new System.Drawing.Point(448, 269);
-            this.itemUS4.Name = "itemUS4";
-            this.itemUS4.Size = new System.Drawing.Size(439, 260);
-            this.itemUS4.TabIndex = 3;
-            // 
-            // checkoutitemsUS1
-            // 
-            this.checkoutitemsUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS1.Location = new System.Drawing.Point(3, 3);
-            this.checkoutitemsUS1.Name = "checkoutitemsUS1";
-            this.checkoutitemsUS1.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS1.TabIndex = 0;
-            // 
-            // checkoutitemsUS2
-            // 
-            this.checkoutitemsUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS2.Location = new System.Drawing.Point(3, 114);
-            this.checkoutitemsUS2.Name = "checkoutitemsUS2";
-            this.checkoutitemsUS2.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS2.TabIndex = 1;
-            // 
-            // checkoutitemsUS3
-            // 
-            this.checkoutitemsUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS3.Location = new System.Drawing.Point(3, 225);
-            this.checkoutitemsUS3.Name = "checkoutitemsUS3";
-            this.checkoutitemsUS3.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS3.TabIndex = 2;
-            // 
-            // checkoutitemsUS5
-            // 
-            this.checkoutitemsUS5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS5.Location = new System.Drawing.Point(3, 336);
-            this.checkoutitemsUS5.Name = "checkoutitemsUS5";
-            this.checkoutitemsUS5.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS5.TabIndex = 4;
-            // 
-            // checkoutitemsUS6
-            // 
-            this.checkoutitemsUS6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS6.Location = new System.Drawing.Point(3, 447);
-            this.checkoutitemsUS6.Name = "checkoutitemsUS6";
-            this.checkoutitemsUS6.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS6.TabIndex = 5;
             // 
             // userControl21
             // 
@@ -484,6 +163,93 @@
             this.userControl210.Size = new System.Drawing.Size(150, 155);
             this.userControl210.TabIndex = 10;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(7, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(407, 30);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Welcome to Coffee Shop Station";
+            // 
+            // checkoutPanel
+            // 
+            this.checkoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutPanel.Controls.Add(this.displayitems);
+            this.checkoutPanel.Controls.Add(this.totallbprice);
+            this.checkoutPanel.Controls.Add(this.price2);
+            this.checkoutPanel.Controls.Add(this.price1);
+            this.checkoutPanel.Controls.Add(this.totallb);
+            this.checkoutPanel.Controls.Add(this.disclb);
+            this.checkoutPanel.Controls.Add(this.subtotallb);
+            this.checkoutPanel.Controls.Add(this.checkoutbtn);
+            this.checkoutPanel.Controls.Add(this.empname);
+            this.checkoutPanel.Controls.Add(this.positionlb);
+            this.checkoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.checkoutPanel.Location = new System.Drawing.Point(1324, 0);
+            this.checkoutPanel.Name = "checkoutPanel";
+            this.checkoutPanel.Size = new System.Drawing.Size(466, 774);
+            this.checkoutPanel.TabIndex = 27;
+            this.checkoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.checkoutPanel_Paint);
+            // 
+            // displayitems
+            // 
+            this.displayitems.AutoScroll = true;
+            this.displayitems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.displayitems.Controls.Add(this.checkoutitemsUS1);
+            this.displayitems.Controls.Add(this.checkoutitemsUS2);
+            this.displayitems.Controls.Add(this.checkoutitemsUS3);
+            this.displayitems.Controls.Add(this.checkoutitemsUS5);
+            this.displayitems.Controls.Add(this.checkoutitemsUS6);
+            this.displayitems.Controls.Add(this.checkoutitemsUS4);
+            this.displayitems.Controls.Add(this.checkoutitemsUS7);
+            this.displayitems.Location = new System.Drawing.Point(27, 99);
+            this.displayitems.Name = "displayitems";
+            this.displayitems.Size = new System.Drawing.Size(423, 387);
+            this.displayitems.TabIndex = 34;
+            // 
+            // checkoutitemsUS1
+            // 
+            this.checkoutitemsUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS1.Location = new System.Drawing.Point(3, 3);
+            this.checkoutitemsUS1.Name = "checkoutitemsUS1";
+            this.checkoutitemsUS1.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS1.TabIndex = 0;
+            // 
+            // checkoutitemsUS2
+            // 
+            this.checkoutitemsUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS2.Location = new System.Drawing.Point(3, 114);
+            this.checkoutitemsUS2.Name = "checkoutitemsUS2";
+            this.checkoutitemsUS2.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS2.TabIndex = 1;
+            // 
+            // checkoutitemsUS3
+            // 
+            this.checkoutitemsUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS3.Location = new System.Drawing.Point(3, 225);
+            this.checkoutitemsUS3.Name = "checkoutitemsUS3";
+            this.checkoutitemsUS3.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS3.TabIndex = 2;
+            // 
+            // checkoutitemsUS5
+            // 
+            this.checkoutitemsUS5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS5.Location = new System.Drawing.Point(3, 336);
+            this.checkoutitemsUS5.Name = "checkoutitemsUS5";
+            this.checkoutitemsUS5.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS5.TabIndex = 4;
+            // 
+            // checkoutitemsUS6
+            // 
+            this.checkoutitemsUS6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS6.Location = new System.Drawing.Point(3, 447);
+            this.checkoutitemsUS6.Name = "checkoutitemsUS6";
+            this.checkoutitemsUS6.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS6.TabIndex = 5;
+            // 
             // checkoutitemsUS4
             // 
             this.checkoutitemsUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
@@ -500,13 +266,267 @@
             this.checkoutitemsUS7.Size = new System.Drawing.Size(354, 105);
             this.checkoutitemsUS7.TabIndex = 7;
             // 
+            // totallbprice
+            // 
+            this.totallbprice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.totallbprice.AutoSize = true;
+            this.totallbprice.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totallbprice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.totallbprice.Location = new System.Drawing.Point(361, 617);
+            this.totallbprice.Name = "totallbprice";
+            this.totallbprice.Size = new System.Drawing.Size(89, 22);
+            this.totallbprice.TabIndex = 33;
+            this.totallbprice.Text = "20.00 $";
+            // 
+            // price2
+            // 
+            this.price2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.price2.AutoSize = true;
+            this.price2.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.price2.Location = new System.Drawing.Point(380, 532);
+            this.price2.Name = "price2";
+            this.price2.Size = new System.Drawing.Size(70, 22);
+            this.price2.TabIndex = 32;
+            this.price2.Text = "1.50 $";
+            // 
+            // price1
+            // 
+            this.price1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.price1.AutoSize = true;
+            this.price1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.price1.Location = new System.Drawing.Point(367, 495);
+            this.price1.Name = "price1";
+            this.price1.Size = new System.Drawing.Size(83, 22);
+            this.price1.TabIndex = 31;
+            this.price1.Text = "21.50 $";
+            // 
+            // totallb
+            // 
+            this.totallb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.totallb.AutoSize = true;
+            this.totallb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totallb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.totallb.Location = new System.Drawing.Point(23, 617);
+            this.totallb.Name = "totallb";
+            this.totallb.Size = new System.Drawing.Size(62, 22);
+            this.totallb.TabIndex = 30;
+            this.totallb.Text = "Total";
+            // 
+            // disclb
+            // 
+            this.disclb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.disclb.AutoSize = true;
+            this.disclb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disclb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.disclb.Location = new System.Drawing.Point(23, 532);
+            this.disclb.Name = "disclb";
+            this.disclb.Size = new System.Drawing.Size(96, 22);
+            this.disclb.TabIndex = 29;
+            this.disclb.Text = "Discount";
+            // 
+            // subtotallb
+            // 
+            this.subtotallb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.subtotallb.AutoSize = true;
+            this.subtotallb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtotallb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.subtotallb.Location = new System.Drawing.Point(24, 495);
+            this.subtotallb.Name = "subtotallb";
+            this.subtotallb.Size = new System.Drawing.Size(91, 22);
+            this.subtotallb.TabIndex = 28;
+            this.subtotallb.Text = "Subtotal";
+            // 
+            // checkoutbtn
+            // 
+            this.checkoutbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.checkoutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutbtn.BorderRadius = 20;
+            this.checkoutbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.checkoutbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.checkoutbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.checkoutbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.checkoutbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.checkoutbtn.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkoutbtn.ForeColor = System.Drawing.Color.White;
+            this.checkoutbtn.Location = new System.Drawing.Point(112, 709);
+            this.checkoutbtn.Name = "checkoutbtn";
+            this.checkoutbtn.Size = new System.Drawing.Size(266, 45);
+            this.checkoutbtn.TabIndex = 27;
+            this.checkoutbtn.Text = "Checkout";
+            // 
+            // empname
+            // 
+            this.empname.AutoSize = true;
+            this.empname.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.empname.Location = new System.Drawing.Point(22, 52);
+            this.empname.Name = "empname";
+            this.empname.Size = new System.Drawing.Size(170, 22);
+            this.empname.TabIndex = 26;
+            this.empname.Text = "Joseph Chamoun";
+            // 
+            // positionlb
+            // 
+            this.positionlb.AutoSize = true;
+            this.positionlb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.positionlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.positionlb.Location = new System.Drawing.Point(22, 15);
+            this.positionlb.Name = "positionlb";
+            this.positionlb.Size = new System.Drawing.Size(83, 26);
+            this.positionlb.TabIndex = 25;
+            this.positionlb.Text = "Admin";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(8, 53);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(165, 22);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Choose a Category";
+            // 
+            // resultnum
+            // 
+            this.resultnum.AutoSize = true;
+            this.resultnum.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultnum.ForeColor = System.Drawing.Color.Silver;
+            this.resultnum.Location = new System.Drawing.Point(171, 292);
+            this.resultnum.Name = "resultnum";
+            this.resultnum.Size = new System.Drawing.Size(109, 22);
+            this.resultnum.TabIndex = 29;
+            this.resultnum.Text = "(13 results)";
+            // 
+            // coffeemenu
+            // 
+            this.coffeemenu.AutoSize = true;
+            this.coffeemenu.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coffeemenu.ForeColor = System.Drawing.Color.White;
+            this.coffeemenu.Location = new System.Drawing.Point(15, 292);
+            this.coffeemenu.Name = "coffeemenu";
+            this.coffeemenu.Size = new System.Drawing.Size(150, 26);
+            this.coffeemenu.TabIndex = 30;
+            this.coffeemenu.Text = "Coffee Menu";
+            // 
+            // menuFlowLayoutPanel
+            // 
+            this.menuFlowLayoutPanel.AutoScroll = true;
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS1);
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS2);
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS3);
+            this.menuFlowLayoutPanel.Controls.Add(this.itemUS4);
+            this.menuFlowLayoutPanel.Location = new System.Drawing.Point(20, 321);
+            this.menuFlowLayoutPanel.Name = "menuFlowLayoutPanel";
+            this.menuFlowLayoutPanel.Size = new System.Drawing.Size(1237, 441);
+            this.menuFlowLayoutPanel.TabIndex = 31;
+            // 
+            // itemUS1
+            // 
+            this.itemUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS1.Location = new System.Drawing.Point(3, 3);
+            this.itemUS1.Name = "itemUS1";
+            this.itemUS1.Size = new System.Drawing.Size(439, 260);
+            this.itemUS1.TabIndex = 0;
+            // 
+            // itemUS2
+            // 
+            this.itemUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS2.Location = new System.Drawing.Point(448, 3);
+            this.itemUS2.Name = "itemUS2";
+            this.itemUS2.Size = new System.Drawing.Size(439, 260);
+            this.itemUS2.TabIndex = 1;
+            // 
+            // itemUS3
+            // 
+            this.itemUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS3.Location = new System.Drawing.Point(3, 269);
+            this.itemUS3.Name = "itemUS3";
+            this.itemUS3.Size = new System.Drawing.Size(439, 260);
+            this.itemUS3.TabIndex = 2;
+            // 
+            // itemUS4
+            // 
+            this.itemUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS4.Location = new System.Drawing.Point(448, 269);
+            this.itemUS4.Name = "itemUS4";
+            this.itemUS4.Size = new System.Drawing.Size(439, 260);
+            this.itemUS4.TabIndex = 3;
+            // 
+            // addButton
+            // 
+            this.addButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.addButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.addButton.Image = global::summer2.Properties.Resources.icons8_plus_24;
+            this.addButton.Location = new System.Drawing.Point(1273, 157);
+            this.addButton.Name = "addButton";
+            this.addButton.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.addButton.Size = new System.Drawing.Size(40, 40);
+            this.addButton.TabIndex = 26;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // searchbar
+            // 
+            this.searchbar.BackColor = System.Drawing.Color.Transparent;
+            this.searchbar.BorderColor = System.Drawing.Color.RosyBrown;
+            this.searchbar.BorderRadius = 15;
+            this.searchbar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchbar.DefaultText = "";
+            this.searchbar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchbar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchbar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchbar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchbar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.searchbar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchbar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.searchbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.searchbar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchbar.IconLeft = global::summer2.Properties.Resources.icons8_search_24;
+            this.searchbar.Location = new System.Drawing.Point(926, 31);
+            this.searchbar.Name = "searchbar";
+            this.searchbar.PasswordChar = '\0';
+            this.searchbar.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.searchbar.PlaceholderText = "Search";
+            this.searchbar.SelectedText = "";
+            this.searchbar.Size = new System.Drawing.Size(331, 36);
+            this.searchbar.TabIndex = 5;
+            this.searchbar.TextChanged += new System.EventHandler(this.searchbar_TextChanged);
+            // 
+            // additems
+            // 
+            this.additems.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.additems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.additems.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.additems.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.additems.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.additems.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.additems.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.additems.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.additems.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.additems.Image = global::summer2.Properties.Resources.icons8_plus_24;
+            this.additems.Location = new System.Drawing.Point(286, 278);
+            this.additems.Name = "additems";
+            this.additems.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.additems.Size = new System.Drawing.Size(40, 40);
+            this.additems.TabIndex = 32;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(1798, 782);
+            this.ClientSize = new System.Drawing.Size(1790, 774);
             this.ControlBox = false;
+            this.Controls.Add(this.additems);
             this.Controls.Add(this.menuFlowLayoutPanel);
             this.Controls.Add(this.coffeemenu);
             this.Controls.Add(this.resultnum);
@@ -516,6 +536,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.searchbar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Home_Load);
@@ -573,5 +594,6 @@
         private checkoutitemsUS checkoutitemsUS6;
         private checkoutitemsUS checkoutitemsUS4;
         private checkoutitemsUS checkoutitemsUS7;
+        private Siticone.Desktop.UI.WinForms.SiticoneCircleButton additems;
     }
 }

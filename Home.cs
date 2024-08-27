@@ -238,14 +238,36 @@ namespace summer2
         }
         private void UpdateResultNumPosition()
         {
-            // Calculate the new X-coordinate for resultnum label (right edge of menuFlowLayoutPanel)
-            int newX = searchbar.Right - resultnum.Width;
+            // Calculate the horizontal position (X) for coffeemenu label, aligning it with flowLayoutPanel1
+            int newXCoffeeMenu = flowLayoutPanel1.Left;
 
-            // Align the Y-coordinate with coffeeMenu label
-            int newY = coffeemenu.Top;  // Align vertically with coffeeMenu label
+            // Calculate the vertical position (Y) for coffeemenu label
+            // Position it slightly below flowLayoutPanel1, using a proportion of the flowLayoutPanel1 height
+            int verticalSpacing = (int)(flowLayoutPanel1.Height * 0.05); // 5% of flowLayoutPanel1 height as spacing
+            int newYCoffeeMenu = flowLayoutPanel1.Bottom + verticalSpacing;
+
+            // Set the new location of coffeemenu label
+            coffeemenu.Location = new Point(newXCoffeeMenu, newYCoffeeMenu+(verticalSpacing*4));
+            // Calculate the horizontal space between the right edge of coffeeMenu and the resultnum label
+            int spacing = (int)(searchbar.Width * 0.02); // 2% of the searchbar width as spacing
+
+            // Calculate the new X-coordinate for resultnum label (right after coffeeMenu label)
+            int newXResultNum = coffeemenu.Right + spacing;
+
+            // Align the Y-coordinate of resultnum with coffeemenu label
+            int newY = coffeemenu.Top;
 
             // Set the location of resultnum label
-            resultnum.Location = new Point(newX, newY);
+            resultnum.Location = new Point(newXResultNum, newY);
+
+            // Calculate the horizontal space between the right edge of resultnum and the additems button
+            int spacingAfterResultNum = (int)(searchbar.Width * 0.03); // 3% of the searchbar width as spacing
+
+            // Calculate the new X-coordinate for additems button (right after resultnum label)
+            int newXAddItems = resultnum.Right + spacingAfterResultNum;
+
+            // Set the location of additems button
+            additems.Location = new Point(newXAddItems, newY-verticalSpacing);
         }
 
         private void searchbar_TextChanged(object sender, EventArgs e)

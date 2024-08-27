@@ -103,6 +103,16 @@ namespace summer2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_collapse_arrow_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-collapse-arrow-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_delete_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-delete-16", resourceCulture);
@@ -113,9 +123,69 @@ namespace summer2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_16__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-16 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_ios_17_glyph_150 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-ios-17-glyph-150", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_ios_17_glyph_310 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-ios-17-glyph-310", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_ios_17_glyph_70 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-ios-17-glyph-70", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_down_arrow_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-down-arrow-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_edit_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-edit-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_expand_arrow_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-expand-arrow-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +233,26 @@ namespace summer2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_left_arrow_ios_17_outlined_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-left-arrow-ios-17-outlined-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_left_arrow_ios_17_outlined_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-left-arrow-ios-17-outlined-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_plus_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-plus-24", resourceCulture);
@@ -176,6 +266,26 @@ namespace summer2.Properties {
         internal static System.Drawing.Bitmap icons8_plus_241 {
             get {
                 object obj = ResourceManager.GetObject("icons8-plus-241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_right_arrow_ios_17_outlined_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-right-arrow-ios-17-outlined-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_right_arrow_ios_17_outlined_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-right-arrow-ios-17-outlined-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +316,16 @@ namespace summer2.Properties {
         internal static System.Drawing.Bitmap icons8_three_dots_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-three-dots-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_up_arrow_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-up-arrow-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
