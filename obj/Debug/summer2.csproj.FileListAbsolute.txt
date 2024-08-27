@@ -48,3 +48,10 @@ C:\Users\96181\source\repos\summer2\obj\Debug\summer2.employeeUS.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.categoryUS.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.itemUS.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.checkoutitemsUS.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.orders.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.expenses.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.expensesUC.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.shiftsandroles.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.Roles.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.EmployeesShiftsUC.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.ShiftDaysUC.resources

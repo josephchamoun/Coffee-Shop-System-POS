@@ -298,6 +298,7 @@ namespace CoffeeStation
 
         private void formSubMenu2_Click(object sender, EventArgs e)
         {
+            //manage suppliers form
             if (sub2 == null)
             {
                 sub2 = new additems();
@@ -305,6 +306,7 @@ namespace CoffeeStation
                 sub2.MdiParent = this;
                 sub2.Dock = DockStyle.Fill;
                 sub2.Show();
+           
             }
             else
             {
@@ -320,6 +322,50 @@ namespace CoffeeStation
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void allproductsbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manageproductbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void shiftsandrolesbtn_Click(object sender, EventArgs e)
+        {
+            if (sub6 == null)
+            {
+                sub6 = new shiftsandroles();
+                sub6.FormClosed += Sub_FormClosed;
+                sub6.MdiParent = this;
+                sub6.Dock = DockStyle.Fill;
+                sub6.Show();
+
+            }
+            else
+            {
+                sub6.Activate();
+            }
+        }
+
+        private void expensesbtn_Click(object sender, EventArgs e)
+        {
+            if (sub5 == null)
+            {
+                sub5= new expenses();
+                sub5.FormClosed += Sub_FormClosed;
+                sub5.MdiParent = this;
+                sub5.Dock = DockStyle.Fill;
+                sub5.Show();
+
+            }
+            else
+            {
+                sub5.Activate();
+            }
         }
     }
 }

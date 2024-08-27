@@ -147,11 +147,23 @@
     <Compile Include="checkoutitemsUS.Designer.cs">
       <DependentUpon>checkoutitemsUS.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeesShiftsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeesShiftsUC.Designer.cs">
+      <DependentUpon>EmployeesShiftsUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="expenses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="expenses.Designer.cs">
       <DependentUpon>expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="expensesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="expensesUC.Designer.cs">
+      <DependentUpon>expensesUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -171,11 +183,23 @@
     <Compile Include="settings.Designer.cs">
       <DependentUpon>settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShiftDaysUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShiftDaysUC.Designer.cs">
+      <DependentUpon>ShiftDaysUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="shiftsandroles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="shiftsandroles.Designer.cs">
       <DependentUpon>shiftsandroles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
     </Compile>
     <Compile Include="sidebar.cs">
       <SubType>Form</SubType>
@@ -221,8 +245,29 @@
     <EmbeddedResource Include="checkoutitemsUS.resx">
       <DependentUpon>checkoutitemsUS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesShiftsUC.resx">
+      <DependentUpon>EmployeesShiftsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expenses.resx">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expensesUC.resx">
+      <DependentUpon>expensesUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders.resx">
+      <DependentUpon>orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiftDaysUC.resx">
+      <DependentUpon>ShiftDaysUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shiftsandroles.resx">
+      <DependentUpon>shiftsandroles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sidebar.resx">
       <DependentUpon>sidebar.cs</DependentUpon>
@@ -320,6 +365,18 @@
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <None Include="Resources\icons8-right-arrow-ios-17-outlined-16.png" />
+    <None Include="Resources\icons8-left-arrow-ios-17-outlined-16.png" />
+    <None Include="Resources\icons8-left-arrow-ios-17-outlined-32.png" />
+    <None Include="Resources\icons8-right-arrow-ios-17-outlined-32.png" />
+    <None Include="Resources\icons8-delete-ios-17-glyph-310.png" />
+    <None Include="Resources\icons8-delete-ios-17-glyph-150.png" />
+    <None Include="Resources\icons8-delete-ios-17-glyph-70.png" />
+    <None Include="Resources\icons8-delete-16 %281%29.png" />
+    <None Include="Resources\icons8-expand-arrow-16.png" />
+    <None Include="Resources\icons8-down-arrow-16.png" />
+    <None Include="Resources\icons8-collapse-arrow-16.png" />
+    <None Include="Resources\icons8-up-arrow-16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
