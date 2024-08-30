@@ -55,3 +55,5 @@ C:\Users\96181\source\repos\summer2\obj\Debug\summer2.shiftsandroles.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.Roles.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.EmployeesShiftsUC.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.ShiftDaysUC.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.supplierproducts.resources
+C:\Users\96181\source\repos\summer2\obj\Debug\summer2.addproductscard.resources

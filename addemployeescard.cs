@@ -13,15 +13,14 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace summer2
 {
-    public partial class addemployeescard : MaterialForm
+    public partial class addemployeescard : Form
     {
         
         public addemployeescard()
         {
-            MaterialSkinManager materialskinmanager;
+  
             InitializeComponent();
-            materialskinmanager = MaterialSkinManager.Instance;
-            materialskinmanager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey900, Accent.Cyan700, TextShade.WHITE);
+           
         }
         string imagePath;
         private void picture_Click(object sender, EventArgs e)

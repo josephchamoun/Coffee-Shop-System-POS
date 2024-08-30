@@ -28,188 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.menuFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.siticoneComboBox1 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.siticoneCustomGradientPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.roleflp = new System.Windows.Forms.FlowLayoutPanel();
+            this.mainflp = new System.Windows.Forms.FlowLayoutPanel();
+            this.shiftlb = new System.Windows.Forms.Label();
+            this.combobox = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.monthandyearlb = new System.Windows.Forms.Label();
+            this.datepanel = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
             this.leftarrowbtn = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
             this.rightarrowbtn = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
-            this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
+            this.firstdaylb = new System.Windows.Forms.Label();
+            this.lastdaylb = new System.Windows.Forms.Label();
+            this.betweenlb = new System.Windows.Forms.Label();
+            this.daysflp = new System.Windows.Forms.FlowLayoutPanel();
+            this.addrolebtn = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
             this.searchbar = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.roleslb = new System.Windows.Forms.Label();
+            this.daysoffbtn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.workingdaysbtn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.employeesShiftsUC1 = new summer2.EmployeesShiftsUC();
+            this.employeesShiftsUC2 = new summer2.EmployeesShiftsUC();
+            this.employeesShiftsUC3 = new summer2.EmployeesShiftsUC();
+            this.employeesShiftsUC4 = new summer2.EmployeesShiftsUC();
+            this.roles1 = new summer2.Roles();
+            this.roles2 = new summer2.Roles();
+            this.roles3 = new summer2.Roles();
             this.shiftDaysUC1 = new summer2.ShiftDaysUC();
             this.shiftDaysUC2 = new summer2.ShiftDaysUC();
             this.shiftDaysUC3 = new summer2.ShiftDaysUC();
             this.shiftDaysUC4 = new summer2.ShiftDaysUC();
             this.shiftDaysUC5 = new summer2.ShiftDaysUC();
-            this.shiftDaysUC7 = new summer2.ShiftDaysUC();
             this.shiftDaysUC6 = new summer2.ShiftDaysUC();
-            this.roles1 = new summer2.Roles();
-            this.roles2 = new summer2.Roles();
-            this.roles3 = new summer2.Roles();
-            this.daysoffbtn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.employeesShiftsUC1 = new summer2.EmployeesShiftsUC();
-            this.employeesShiftsUC2 = new summer2.EmployeesShiftsUC();
-            this.employeesShiftsUC3 = new summer2.EmployeesShiftsUC();
-            this.employeesShiftsUC4 = new summer2.EmployeesShiftsUC();
-            this.Workingdaysbtn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.menuFlowLayoutPanel.SuspendLayout();
-            this.siticoneCustomGradientPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.shiftDaysUC7 = new summer2.ShiftDaysUC();
+            this.roles4 = new summer2.Roles();
+            this.roleflp.SuspendLayout();
+            this.mainflp.SuspendLayout();
+            this.datepanel.SuspendLayout();
+            this.daysflp.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // roleflp
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.roles1);
-            this.flowLayoutPanel1.Controls.Add(this.roles2);
-            this.flowLayoutPanel1.Controls.Add(this.roles3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(18, 35);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1524, 131);
-            this.flowLayoutPanel1.TabIndex = 8;
-            this.flowLayoutPanel1.WrapContents = false;
+            this.roleflp.AutoScroll = true;
+            this.roleflp.Controls.Add(this.roles1);
+            this.roleflp.Controls.Add(this.roles2);
+            this.roleflp.Controls.Add(this.roles3);
+            this.roleflp.Controls.Add(this.roles4);
+            this.roleflp.Location = new System.Drawing.Point(18, 35);
+            this.roleflp.Name = "roleflp";
+            this.roleflp.Size = new System.Drawing.Size(1524, 131);
+            this.roleflp.TabIndex = 8;
+            this.roleflp.WrapContents = false;
             // 
-            // menuFlowLayoutPanel
+            // mainflp
             // 
-            this.menuFlowLayoutPanel.AutoScroll = true;
-            this.menuFlowLayoutPanel.Controls.Add(this.employeesShiftsUC1);
-            this.menuFlowLayoutPanel.Controls.Add(this.employeesShiftsUC2);
-            this.menuFlowLayoutPanel.Controls.Add(this.employeesShiftsUC3);
-            this.menuFlowLayoutPanel.Controls.Add(this.employeesShiftsUC4);
-            this.menuFlowLayoutPanel.Location = new System.Drawing.Point(18, 368);
-            this.menuFlowLayoutPanel.Name = "menuFlowLayoutPanel";
-            this.menuFlowLayoutPanel.Size = new System.Drawing.Size(1524, 401);
-            this.menuFlowLayoutPanel.TabIndex = 37;
+            this.mainflp.AutoScroll = true;
+            this.mainflp.Controls.Add(this.employeesShiftsUC1);
+            this.mainflp.Controls.Add(this.employeesShiftsUC2);
+            this.mainflp.Controls.Add(this.employeesShiftsUC3);
+            this.mainflp.Controls.Add(this.employeesShiftsUC4);
+            this.mainflp.Location = new System.Drawing.Point(18, 368);
+            this.mainflp.Name = "mainflp";
+            this.mainflp.Size = new System.Drawing.Size(1524, 401);
+            this.mainflp.TabIndex = 37;
             // 
-            // label2
+            // shiftlb
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(16, 185);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 30);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Shift Schedule";
+            this.shiftlb.AutoSize = true;
+            this.shiftlb.BackColor = System.Drawing.Color.Transparent;
+            this.shiftlb.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shiftlb.ForeColor = System.Drawing.Color.White;
+            this.shiftlb.Location = new System.Drawing.Point(16, 185);
+            this.shiftlb.Name = "shiftlb";
+            this.shiftlb.Size = new System.Drawing.Size(193, 30);
+            this.shiftlb.TabIndex = 39;
+            this.shiftlb.Text = "Shift Schedule";
             // 
-            // siticoneComboBox1
+            // combobox
             // 
-            this.siticoneComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneComboBox1.BorderRadius = 15;
-            this.siticoneComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.siticoneComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.siticoneComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.siticoneComboBox1.ItemHeight = 30;
-            this.siticoneComboBox1.Location = new System.Drawing.Point(215, 185);
-            this.siticoneComboBox1.Name = "siticoneComboBox1";
-            this.siticoneComboBox1.Size = new System.Drawing.Size(162, 36);
-            this.siticoneComboBox1.TabIndex = 40;
+            this.combobox.BackColor = System.Drawing.Color.Transparent;
+            this.combobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.combobox.BorderRadius = 15;
+            this.combobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combobox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.combobox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combobox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combobox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combobox.ItemHeight = 30;
+            this.combobox.Location = new System.Drawing.Point(215, 185);
+            this.combobox.Name = "combobox";
+            this.combobox.Size = new System.Drawing.Size(162, 36);
+            this.combobox.TabIndex = 40;
             // 
-            // label1
+            // monthandyearlb
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(18, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 30);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "August 2024";
+            this.monthandyearlb.AutoSize = true;
+            this.monthandyearlb.BackColor = System.Drawing.Color.Transparent;
+            this.monthandyearlb.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthandyearlb.ForeColor = System.Drawing.Color.White;
+            this.monthandyearlb.Location = new System.Drawing.Point(18, 11);
+            this.monthandyearlb.Name = "monthandyearlb";
+            this.monthandyearlb.Size = new System.Drawing.Size(176, 30);
+            this.monthandyearlb.TabIndex = 41;
+            this.monthandyearlb.Text = "August 2024";
             // 
-            // siticoneCustomGradientPanel1
+            // datepanel
             // 
-            this.siticoneCustomGradientPanel1.Controls.Add(this.leftarrowbtn);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.rightarrowbtn);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.label5);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.label4);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.label3);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.label1);
-            this.siticoneCustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.Location = new System.Drawing.Point(18, 232);
-            this.siticoneCustomGradientPanel1.Name = "siticoneCustomGradientPanel1";
-            this.siticoneCustomGradientPanel1.Size = new System.Drawing.Size(1524, 50);
-            this.siticoneCustomGradientPanel1.TabIndex = 42;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(886, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 30);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "-";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label4.Location = new System.Drawing.Point(945, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 26);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "07 AUG 2024";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label5.Location = new System.Drawing.Point(668, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 26);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "01 AUG 2024";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.flowLayoutPanel2.Controls.Add(this.shiftDaysUC1);
-            this.flowLayoutPanel2.Controls.Add(this.shiftDaysUC2);
-            this.flowLayoutPanel2.Controls.Add(this.shiftDaysUC3);
-            this.flowLayoutPanel2.Controls.Add(this.shiftDaysUC4);
-            this.flowLayoutPanel2.Controls.Add(this.shiftDaysUC5);
-            this.flowLayoutPanel2.Controls.Add(this.shiftDaysUC7);
-            this.flowLayoutPanel2.Controls.Add(this.shiftDaysUC6);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(509, 285);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1033, 80);
-            this.flowLayoutPanel2.TabIndex = 43;
-            this.flowLayoutPanel2.WrapContents = false;
+            this.datepanel.BackColor = System.Drawing.Color.Transparent;
+            this.datepanel.Controls.Add(this.leftarrowbtn);
+            this.datepanel.Controls.Add(this.rightarrowbtn);
+            this.datepanel.Controls.Add(this.firstdaylb);
+            this.datepanel.Controls.Add(this.lastdaylb);
+            this.datepanel.Controls.Add(this.betweenlb);
+            this.datepanel.Controls.Add(this.monthandyearlb);
+            this.datepanel.FillColor = System.Drawing.Color.Transparent;
+            this.datepanel.FillColor2 = System.Drawing.Color.Transparent;
+            this.datepanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.datepanel.FillColor4 = System.Drawing.Color.Transparent;
+            this.datepanel.Location = new System.Drawing.Point(18, 232);
+            this.datepanel.Name = "datepanel";
+            this.datepanel.Size = new System.Drawing.Size(1524, 50);
+            this.datepanel.TabIndex = 42;
             // 
             // leftarrowbtn
             // 
             this.leftarrowbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.leftarrowbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.leftarrowbtn.BackColor = System.Drawing.Color.Transparent;
             this.leftarrowbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.leftarrowbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.leftarrowbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.leftarrowbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.leftarrowbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.leftarrowbtn.FillColor = System.Drawing.Color.Transparent;
             this.leftarrowbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.leftarrowbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.leftarrowbtn.Image = global::summer2.Properties.Resources.icons8_left_arrow_ios_17_outlined_32;
@@ -223,12 +173,12 @@
             // rightarrowbtn
             // 
             this.rightarrowbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rightarrowbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.rightarrowbtn.BackColor = System.Drawing.Color.Transparent;
             this.rightarrowbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.rightarrowbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.rightarrowbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.rightarrowbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.rightarrowbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.rightarrowbtn.FillColor = System.Drawing.Color.Transparent;
             this.rightarrowbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.rightarrowbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.rightarrowbtn.Image = global::summer2.Properties.Resources.icons8_right_arrow_ios_17_outlined_32;
@@ -239,29 +189,82 @@
             this.rightarrowbtn.Size = new System.Drawing.Size(52, 47);
             this.rightarrowbtn.TabIndex = 45;
             // 
-            // addButton
+            // firstdaylb
             // 
-            this.addButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.addButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addButton.Image = global::summer2.Properties.Resources.icons8_plus_24;
-            this.addButton.Location = new System.Drawing.Point(1591, 84);
-            this.addButton.Name = "addButton";
-            this.addButton.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.addButton.Size = new System.Drawing.Size(40, 40);
-            this.addButton.TabIndex = 38;
+            this.firstdaylb.AutoSize = true;
+            this.firstdaylb.BackColor = System.Drawing.Color.Transparent;
+            this.firstdaylb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstdaylb.ForeColor = System.Drawing.Color.White;
+            this.firstdaylb.Location = new System.Drawing.Point(668, 10);
+            this.firstdaylb.Name = "firstdaylb";
+            this.firstdaylb.Size = new System.Drawing.Size(168, 26);
+            this.firstdaylb.TabIndex = 44;
+            this.firstdaylb.Text = "01 AUG 2024";
+            // 
+            // lastdaylb
+            // 
+            this.lastdaylb.AutoSize = true;
+            this.lastdaylb.BackColor = System.Drawing.Color.Transparent;
+            this.lastdaylb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastdaylb.ForeColor = System.Drawing.Color.White;
+            this.lastdaylb.Location = new System.Drawing.Point(945, 10);
+            this.lastdaylb.Name = "lastdaylb";
+            this.lastdaylb.Size = new System.Drawing.Size(170, 26);
+            this.lastdaylb.TabIndex = 43;
+            this.lastdaylb.Text = "07 AUG 2024";
+            // 
+            // betweenlb
+            // 
+            this.betweenlb.AutoSize = true;
+            this.betweenlb.BackColor = System.Drawing.Color.Transparent;
+            this.betweenlb.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.betweenlb.ForeColor = System.Drawing.Color.White;
+            this.betweenlb.Location = new System.Drawing.Point(886, 10);
+            this.betweenlb.Name = "betweenlb";
+            this.betweenlb.Size = new System.Drawing.Size(20, 30);
+            this.betweenlb.TabIndex = 42;
+            this.betweenlb.Text = "-";
+            // 
+            // daysflp
+            // 
+            this.daysflp.AutoScroll = true;
+            this.daysflp.BackColor = System.Drawing.Color.Transparent;
+            this.daysflp.Controls.Add(this.shiftDaysUC1);
+            this.daysflp.Controls.Add(this.shiftDaysUC2);
+            this.daysflp.Controls.Add(this.shiftDaysUC3);
+            this.daysflp.Controls.Add(this.shiftDaysUC4);
+            this.daysflp.Controls.Add(this.shiftDaysUC5);
+            this.daysflp.Controls.Add(this.shiftDaysUC6);
+            this.daysflp.Controls.Add(this.shiftDaysUC7);
+            this.daysflp.Location = new System.Drawing.Point(509, 285);
+            this.daysflp.Name = "daysflp";
+            this.daysflp.Size = new System.Drawing.Size(1033, 80);
+            this.daysflp.TabIndex = 43;
+            this.daysflp.WrapContents = false;
+            // 
+            // addrolebtn
+            // 
+            this.addrolebtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addrolebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.addrolebtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addrolebtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addrolebtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addrolebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addrolebtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.addrolebtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addrolebtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.addrolebtn.Image = global::summer2.Properties.Resources.icons8_plus_24;
+            this.addrolebtn.Location = new System.Drawing.Point(1591, 84);
+            this.addrolebtn.Name = "addrolebtn";
+            this.addrolebtn.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.addrolebtn.Size = new System.Drawing.Size(40, 40);
+            this.addrolebtn.TabIndex = 38;
             // 
             // searchbar
             // 
             this.searchbar.BackColor = System.Drawing.Color.Transparent;
             this.searchbar.BorderColor = System.Drawing.Color.RosyBrown;
-            this.searchbar.BorderRadius = 23;
+            this.searchbar.BorderRadius = 15;
             this.searchbar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchbar.DefaultText = "";
             this.searchbar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -284,103 +287,23 @@
             this.searchbar.TabIndex = 44;
             this.searchbar.TextChanged += new System.EventHandler(this.searchbar_TextChanged);
             // 
-            // label6
+            // roleslb
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(13, 2);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 30);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Roles";
-            // 
-            // shiftDaysUC1
-            // 
-            this.shiftDaysUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.shiftDaysUC1.Location = new System.Drawing.Point(3, 3);
-            this.shiftDaysUC1.Name = "shiftDaysUC1";
-            this.shiftDaysUC1.Size = new System.Drawing.Size(163, 41);
-            this.shiftDaysUC1.TabIndex = 0;
-            // 
-            // shiftDaysUC2
-            // 
-            this.shiftDaysUC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.shiftDaysUC2.Location = new System.Drawing.Point(172, 3);
-            this.shiftDaysUC2.Name = "shiftDaysUC2";
-            this.shiftDaysUC2.Size = new System.Drawing.Size(163, 41);
-            this.shiftDaysUC2.TabIndex = 1;
-            // 
-            // shiftDaysUC3
-            // 
-            this.shiftDaysUC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.shiftDaysUC3.Location = new System.Drawing.Point(341, 3);
-            this.shiftDaysUC3.Name = "shiftDaysUC3";
-            this.shiftDaysUC3.Size = new System.Drawing.Size(163, 41);
-            this.shiftDaysUC3.TabIndex = 2;
-            // 
-            // shiftDaysUC4
-            // 
-            this.shiftDaysUC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.shiftDaysUC4.Location = new System.Drawing.Point(510, 3);
-            this.shiftDaysUC4.Name = "shiftDaysUC4";
-            this.shiftDaysUC4.Size = new System.Drawing.Size(163, 41);
-            this.shiftDaysUC4.TabIndex = 3;
-            // 
-            // shiftDaysUC5
-            // 
-            this.shiftDaysUC5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.shiftDaysUC5.Location = new System.Drawing.Point(679, 3);
-            this.shiftDaysUC5.Name = "shiftDaysUC5";
-            this.shiftDaysUC5.Size = new System.Drawing.Size(163, 41);
-            this.shiftDaysUC5.TabIndex = 4;
-            // 
-            // shiftDaysUC7
-            // 
-            this.shiftDaysUC7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.shiftDaysUC7.Location = new System.Drawing.Point(848, 3);
-            this.shiftDaysUC7.Name = "shiftDaysUC7";
-            this.shiftDaysUC7.Size = new System.Drawing.Size(163, 41);
-            this.shiftDaysUC7.TabIndex = 6;
-            // 
-            // shiftDaysUC6
-            // 
-            this.shiftDaysUC6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.shiftDaysUC6.Location = new System.Drawing.Point(1017, 3);
-            this.shiftDaysUC6.Name = "shiftDaysUC6";
-            this.shiftDaysUC6.Size = new System.Drawing.Size(163, 41);
-            this.shiftDaysUC6.TabIndex = 7;
-            // 
-            // roles1
-            // 
-            this.roles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.roles1.Location = new System.Drawing.Point(3, 3);
-            this.roles1.Name = "roles1";
-            this.roles1.Size = new System.Drawing.Size(402, 122);
-            this.roles1.TabIndex = 0;
-            // 
-            // roles2
-            // 
-            this.roles2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.roles2.Location = new System.Drawing.Point(411, 3);
-            this.roles2.Name = "roles2";
-            this.roles2.Size = new System.Drawing.Size(402, 122);
-            this.roles2.TabIndex = 1;
-            // 
-            // roles3
-            // 
-            this.roles3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.roles3.Location = new System.Drawing.Point(819, 3);
-            this.roles3.Name = "roles3";
-            this.roles3.Size = new System.Drawing.Size(402, 122);
-            this.roles3.TabIndex = 2;
+            this.roleslb.AutoSize = true;
+            this.roleslb.BackColor = System.Drawing.Color.Transparent;
+            this.roleslb.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleslb.ForeColor = System.Drawing.Color.White;
+            this.roleslb.Location = new System.Drawing.Point(13, 2);
+            this.roleslb.Name = "roleslb";
+            this.roleslb.Size = new System.Drawing.Size(83, 30);
+            this.roleslb.TabIndex = 45;
+            this.roleslb.Text = "Roles";
             // 
             // daysoffbtn
             // 
             this.daysoffbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.daysoffbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.daysoffbtn.BorderRadius = 20;
+            this.daysoffbtn.BorderRadius = 15;
             this.daysoffbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.daysoffbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.daysoffbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -394,6 +317,25 @@
             this.daysoffbtn.TabIndex = 48;
             this.daysoffbtn.Text = "Days Off";
             this.daysoffbtn.Click += new System.EventHandler(this.daysoffbtn_Click);
+            // 
+            // workingdaysbtn
+            // 
+            this.workingdaysbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.workingdaysbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.workingdaysbtn.BorderRadius = 15;
+            this.workingdaysbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.workingdaysbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.workingdaysbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.workingdaysbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.workingdaysbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.workingdaysbtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.workingdaysbtn.ForeColor = System.Drawing.Color.White;
+            this.workingdaysbtn.Location = new System.Drawing.Point(587, 185);
+            this.workingdaysbtn.Name = "workingdaysbtn";
+            this.workingdaysbtn.Size = new System.Drawing.Size(177, 36);
+            this.workingdaysbtn.TabIndex = 49;
+            this.workingdaysbtn.Text = "Working Days";
+            this.workingdaysbtn.Click += new System.EventHandler(this.Workingdaysbtn_Click);
             // 
             // employeesShiftsUC1
             // 
@@ -427,24 +369,93 @@
             this.employeesShiftsUC4.Size = new System.Drawing.Size(1458, 118);
             this.employeesShiftsUC4.TabIndex = 3;
             // 
-            // Workingdaysbtn
+            // roles1
             // 
-            this.Workingdaysbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Workingdaysbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.Workingdaysbtn.BorderRadius = 20;
-            this.Workingdaysbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Workingdaysbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Workingdaysbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Workingdaysbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Workingdaysbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.Workingdaysbtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Workingdaysbtn.ForeColor = System.Drawing.Color.White;
-            this.Workingdaysbtn.Location = new System.Drawing.Point(587, 185);
-            this.Workingdaysbtn.Name = "Workingdaysbtn";
-            this.Workingdaysbtn.Size = new System.Drawing.Size(177, 36);
-            this.Workingdaysbtn.TabIndex = 49;
-            this.Workingdaysbtn.Text = "Working Days";
-            this.Workingdaysbtn.Click += new System.EventHandler(this.Workingdaysbtn_Click);
+            this.roles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.roles1.Location = new System.Drawing.Point(3, 3);
+            this.roles1.Name = "roles1";
+            this.roles1.Size = new System.Drawing.Size(402, 122);
+            this.roles1.TabIndex = 0;
+            // 
+            // roles2
+            // 
+            this.roles2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.roles2.Location = new System.Drawing.Point(411, 3);
+            this.roles2.Name = "roles2";
+            this.roles2.Size = new System.Drawing.Size(402, 122);
+            this.roles2.TabIndex = 1;
+            // 
+            // roles3
+            // 
+            this.roles3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.roles3.Location = new System.Drawing.Point(819, 3);
+            this.roles3.Name = "roles3";
+            this.roles3.Size = new System.Drawing.Size(402, 122);
+            this.roles3.TabIndex = 2;
+            // 
+            // shiftDaysUC1
+            // 
+            this.shiftDaysUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.shiftDaysUC1.Location = new System.Drawing.Point(3, 3);
+            this.shiftDaysUC1.Name = "shiftDaysUC1";
+            this.shiftDaysUC1.Size = new System.Drawing.Size(164, 46);
+            this.shiftDaysUC1.TabIndex = 0;
+            // 
+            // shiftDaysUC2
+            // 
+            this.shiftDaysUC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.shiftDaysUC2.Location = new System.Drawing.Point(173, 3);
+            this.shiftDaysUC2.Name = "shiftDaysUC2";
+            this.shiftDaysUC2.Size = new System.Drawing.Size(164, 46);
+            this.shiftDaysUC2.TabIndex = 1;
+            // 
+            // shiftDaysUC3
+            // 
+            this.shiftDaysUC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.shiftDaysUC3.Location = new System.Drawing.Point(343, 3);
+            this.shiftDaysUC3.Name = "shiftDaysUC3";
+            this.shiftDaysUC3.Size = new System.Drawing.Size(164, 46);
+            this.shiftDaysUC3.TabIndex = 2;
+            // 
+            // shiftDaysUC4
+            // 
+            this.shiftDaysUC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.shiftDaysUC4.Location = new System.Drawing.Point(513, 3);
+            this.shiftDaysUC4.Name = "shiftDaysUC4";
+            this.shiftDaysUC4.Size = new System.Drawing.Size(164, 46);
+            this.shiftDaysUC4.TabIndex = 3;
+            // 
+            // shiftDaysUC5
+            // 
+            this.shiftDaysUC5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.shiftDaysUC5.Location = new System.Drawing.Point(683, 3);
+            this.shiftDaysUC5.Name = "shiftDaysUC5";
+            this.shiftDaysUC5.Size = new System.Drawing.Size(164, 46);
+            this.shiftDaysUC5.TabIndex = 4;
+            // 
+            // shiftDaysUC6
+            // 
+            this.shiftDaysUC6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.shiftDaysUC6.Location = new System.Drawing.Point(853, 3);
+            this.shiftDaysUC6.Name = "shiftDaysUC6";
+            this.shiftDaysUC6.Size = new System.Drawing.Size(164, 46);
+            this.shiftDaysUC6.TabIndex = 5;
+            // 
+            // shiftDaysUC7
+            // 
+            this.shiftDaysUC7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.shiftDaysUC7.Location = new System.Drawing.Point(1023, 3);
+            this.shiftDaysUC7.Name = "shiftDaysUC7";
+            this.shiftDaysUC7.Size = new System.Drawing.Size(164, 46);
+            this.shiftDaysUC7.TabIndex = 6;
+            // 
+            // roles4
+            // 
+            this.roles4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.roles4.Location = new System.Drawing.Point(1227, 3);
+            this.roles4.Name = "roles4";
+            this.roles4.Size = new System.Drawing.Size(402, 122);
+            this.roles4.TabIndex = 3;
             // 
             // shiftsandroles
             // 
@@ -453,24 +464,25 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(1739, 788);
             this.ControlBox = false;
-            this.Controls.Add(this.Workingdaysbtn);
+            this.Controls.Add(this.workingdaysbtn);
             this.Controls.Add(this.daysoffbtn);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.roleslb);
             this.Controls.Add(this.searchbar);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.siticoneCustomGradientPanel1);
-            this.Controls.Add(this.siticoneComboBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.addButton);
-            this.Controls.Add(this.menuFlowLayoutPanel);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.daysflp);
+            this.Controls.Add(this.datepanel);
+            this.Controls.Add(this.combobox);
+            this.Controls.Add(this.shiftlb);
+            this.Controls.Add(this.addrolebtn);
+            this.Controls.Add(this.mainflp);
+            this.Controls.Add(this.roleflp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "shiftsandroles";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.menuFlowLayoutPanel.ResumeLayout(false);
-            this.siticoneCustomGradientPanel1.ResumeLayout(false);
-            this.siticoneCustomGradientPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.Resize += new System.EventHandler(this.shiftsandroles_Resize);
+            this.roleflp.ResumeLayout(false);
+            this.mainflp.ResumeLayout(false);
+            this.datepanel.ResumeLayout(false);
+            this.datepanel.PerformLayout();
+            this.daysflp.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,36 +490,37 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel menuFlowLayoutPanel;
-        private Siticone.Desktop.UI.WinForms.SiticoneCircleButton addButton;
-        private System.Windows.Forms.Label label2;
-        private Siticone.Desktop.UI.WinForms.SiticoneComboBox siticoneComboBox1;
+        private System.Windows.Forms.FlowLayoutPanel roleflp;
+        private System.Windows.Forms.FlowLayoutPanel mainflp;
+        private Siticone.Desktop.UI.WinForms.SiticoneCircleButton addrolebtn;
+        private System.Windows.Forms.Label shiftlb;
+        private Siticone.Desktop.UI.WinForms.SiticoneComboBox combobox;
         private Roles roles1;
         private Roles roles2;
         private Roles roles3;
-        private System.Windows.Forms.Label label1;
-        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel siticoneCustomGradientPanel1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label monthandyearlb;
+        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel datepanel;
+        private System.Windows.Forms.Label firstdaylb;
+        private System.Windows.Forms.Label lastdaylb;
+        private System.Windows.Forms.Label betweenlb;
         private Siticone.Desktop.UI.WinForms.SiticoneCircleButton rightarrowbtn;
         private Siticone.Desktop.UI.WinForms.SiticoneCircleButton leftarrowbtn;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private ShiftDaysUC shiftDaysUC1;
-        private ShiftDaysUC shiftDaysUC2;
-        private ShiftDaysUC shiftDaysUC3;
-        private ShiftDaysUC shiftDaysUC4;
-        private ShiftDaysUC shiftDaysUC5;
+        private System.Windows.Forms.FlowLayoutPanel daysflp;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox searchbar;
-        private System.Windows.Forms.Label label6;
-        private ShiftDaysUC shiftDaysUC7;
-        private ShiftDaysUC shiftDaysUC6;
+        private System.Windows.Forms.Label roleslb;
         private Siticone.Desktop.UI.WinForms.SiticoneButton daysoffbtn;
         private EmployeesShiftsUC employeesShiftsUC1;
         private EmployeesShiftsUC employeesShiftsUC2;
         private EmployeesShiftsUC employeesShiftsUC3;
         private EmployeesShiftsUC employeesShiftsUC4;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton Workingdaysbtn;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton workingdaysbtn;
+        private ShiftDaysUC shiftDaysUC1;
+        private ShiftDaysUC shiftDaysUC2;
+        private ShiftDaysUC shiftDaysUC3;
+        private ShiftDaysUC shiftDaysUC4;
+        private ShiftDaysUC shiftDaysUC5;
+        private ShiftDaysUC shiftDaysUC6;
+        private ShiftDaysUC shiftDaysUC7;
+        private Roles roles4;
     }
 }
