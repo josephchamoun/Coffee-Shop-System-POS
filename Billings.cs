@@ -60,6 +60,7 @@ namespace summer2
             int panelSpacing = 10;
             int chartSpacing = 10;
 
+            // Adjust button sizes and locations
             buttons1.Size = new Size(buttonWidth, buttonHeight);
             buttons1.Location = new Point(5, 5);
 
@@ -74,11 +75,21 @@ namespace summer2
             anotherPanel.Location = new Point(5, buttons1.Bottom + panelSpacing);  // Ensure alignment here
             anotherPanel.Size = new Size(rightPanel.Width - 10, panelHeight);
 
-            // Adjust the chart height allocation to ensure enough space for the legends
-            int chartHeight = (int)(rightPanel.Height * 2.5 / 3.0) - chartSpacing - 20; // Additional 20 pixels for legends
+            // Calculate the total available height for charts after buttons and anotherPanel
+            int availableHeightForCharts = rightPanel.Height - anotherPanel.Bottom - (2 * chartSpacing);
+
+            // Adjust chart sizes to fit both in the available space
+            int chartHeight = availableHeightForCharts / 2; // Half of the available height
+
+            // Adjust the topProductChart size and location
             topProductChart.Size = new Size(rightPanel.Width - 10, chartHeight);
-            topProductChart.Location = new Point(5, anotherPanel.Bottom + chartSpacing); // Positioned to align with the bottom of anotherPanel
+            topProductChart.Location = new Point(5, anotherPanel.Bottom + chartSpacing);
+
+            // Add and adjust the leastSoldProducts chart size and location
+            leastsoldproducts.Size = new Size(rightPanel.Width - 10, chartHeight);
+            leastsoldproducts.Location = new Point(5, topProductChart.Bottom + chartSpacing);
         }
+
 
         private void AdjustLeftPanelSize()
         {
@@ -95,7 +106,7 @@ namespace summer2
             int squareButtonSize = buttonHeight;
             int buttonSpacing = 5;
             int panelSpacing = 10;
-            int panelHeight = (int)(rightPanel.Height * 0.2) - buttonHeight - panelSpacing;
+            int extraPanelSpacing = 20; // Increased spacing between panels
 
             dateTimePicker1.Size = new Size((leftPanel.Width - 4 * buttonSpacing - 2 * buttonWidth - squareButtonSize) / 2, buttonHeight);
             dateTimePicker1.Location = new Point(5, 5);
@@ -112,11 +123,15 @@ namespace summer2
             leftButton3.Size = new Size(buttonWidth, buttonHeight);
             leftButton3.Location = new Point(leftButton2.Right + buttonSpacing, 5);
 
-            orderpanel.Size = new Size((leftPanel.Width - 15) / 2, panelHeight);
+            // Calculate new width for the panels to allow spacing between them
+            int panelWidth = (leftPanel.Width - 15) / 2; // Total width minus spacing
+
+            // Adjust the sizes of orderpanel and leftPanel2 to fill the width but have space between them
+            orderpanel.Size = new Size(panelWidth - 5, (int)(rightPanel.Height * 0.2) - buttonHeight - panelSpacing);
             orderpanel.Location = new Point(5, leftButton1.Bottom + panelSpacing);
 
-            leftPanel2.Size = new Size((leftPanel.Width - 15) / 2, panelHeight);
-            leftPanel2.Location = new Point(orderpanel.Right + panelSpacing, leftButton1.Bottom + panelSpacing);
+            leftPanel2.Size = new Size(panelWidth - 5, (int)(rightPanel.Height * 0.2) - buttonHeight - panelSpacing);
+            leftPanel2.Location = new Point(orderpanel.Right + 10, leftButton1.Bottom + panelSpacing); // Add space between panels
 
             int chartHeight = (int)(rightPanel.Height / 2.0) - panelSpacing;
             leftPanelChart.Size = new Size(leftPanel.Width - 10, chartHeight);
@@ -129,6 +144,9 @@ namespace summer2
             leftPanel4.Size = new Size((2 * (leftPanel.Width - 15)) / 3, panel34Height);
             leftPanel4.Location = new Point(leftPanel3.Right + panelSpacing, leftPanelChart.Bottom + panelSpacing);
         }
+
+
+
         private void resizeorderpanel()
         {
             int panelWidth = orderpanel.Width;

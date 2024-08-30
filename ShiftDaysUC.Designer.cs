@@ -35,6 +35,7 @@
             // 
             // siticoneCustomGradientPanel1
             // 
+            this.siticoneCustomGradientPanel1.BorderRadius = 15;
             this.siticoneCustomGradientPanel1.Controls.Add(this.label1);
             this.siticoneCustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
             this.siticoneCustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
@@ -61,10 +62,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.Controls.Add(this.siticoneCustomGradientPanel1);
             this.Name = "ShiftDaysUC";
-            this.Size = new System.Drawing.Size(163, 41);
+            this.Size = new System.Drawing.Size(164, 46);
             this.siticoneCustomGradientPanel1.ResumeLayout(false);
             this.siticoneCustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);

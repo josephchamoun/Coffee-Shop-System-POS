@@ -55,11 +55,12 @@
             // addbtn
             // 
             this.addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.addbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.addbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.addbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.addbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
             this.addbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addbtn.ForeColor = System.Drawing.Color.White;
             this.addbtn.Image = global::summer2.Properties.Resources.icons8_plus_24;
@@ -72,7 +73,7 @@
             // 
             // siticoneTextBox1
             // 
-            this.siticoneTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.siticoneTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.siticoneTextBox1.BorderColor = System.Drawing.Color.LightGray;
             this.siticoneTextBox1.BorderRadius = 15;
             this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -100,8 +101,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(1037, 692);
+            this.ControlBox = false;
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.siticoneTextBox1);
             this.Controls.Add(this.flowLayoutPanel2);

@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.siticoneCustomGradientPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.leftPanel3 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label13 = new System.Windows.Forms.Label();
             this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
-            this.expensesUC1 = new summer2.expensesUC();
-            this.expensesUC2 = new summer2.expensesUC();
-            this.expensesUC3 = new summer2.expensesUC();
             this.datelb = new System.Windows.Forms.Label();
             this.siticoneCustomGradientPanel2 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.expensesUC1 = new summer2.expensesUC();
+            this.expensesUC2 = new summer2.expensesUC();
+            this.expensesUC3 = new summer2.expensesUC();
             this.siticoneCustomGradientPanel1.SuspendLayout();
-            this.leftPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.leftPanel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.siticoneCustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -71,6 +71,17 @@
             this.siticoneCustomGradientPanel1.Name = "siticoneCustomGradientPanel1";
             this.siticoneCustomGradientPanel1.Size = new System.Drawing.Size(304, 111);
             this.siticoneCustomGradientPanel1.TabIndex = 57;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::summer2.Properties.Resources._10577105_48__2_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -110,7 +121,7 @@
             // 
             // leftPanel3
             // 
-            this.leftPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.leftPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.leftPanel3.Controls.Add(this.flowLayoutPanel1);
             this.leftPanel3.Controls.Add(this.label13);
             this.leftPanel3.Location = new System.Drawing.Point(47, 204);
@@ -118,31 +129,10 @@
             this.leftPanel3.Size = new System.Drawing.Size(593, 507);
             this.leftPanel3.TabIndex = 59;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Poor Richard", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label13.Location = new System.Drawing.Point(157, 19);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(228, 38);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "ALL EXPENSES";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::summer2.Properties.Resources._10577105_48__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.flowLayoutPanel1.Controls.Add(this.expensesUC1);
             this.flowLayoutPanel1.Controls.Add(this.expensesUC2);
             this.flowLayoutPanel1.Controls.Add(this.expensesUC3);
@@ -150,6 +140,17 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(558, 407);
             this.flowLayoutPanel1.TabIndex = 7;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Poor Richard", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(157, 19);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(220, 37);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "ALL EXPENSES";
             // 
             // addButton
             // 
@@ -168,30 +169,6 @@
             this.addButton.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
             this.addButton.Size = new System.Drawing.Size(40, 40);
             this.addButton.TabIndex = 60;
-            // 
-            // expensesUC1
-            // 
-            this.expensesUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.expensesUC1.Location = new System.Drawing.Point(3, 3);
-            this.expensesUC1.Name = "expensesUC1";
-            this.expensesUC1.Size = new System.Drawing.Size(257, 144);
-            this.expensesUC1.TabIndex = 0;
-            // 
-            // expensesUC2
-            // 
-            this.expensesUC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.expensesUC2.Location = new System.Drawing.Point(266, 3);
-            this.expensesUC2.Name = "expensesUC2";
-            this.expensesUC2.Size = new System.Drawing.Size(257, 144);
-            this.expensesUC2.TabIndex = 1;
-            // 
-            // expensesUC3
-            // 
-            this.expensesUC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.expensesUC3.Location = new System.Drawing.Point(3, 153);
-            this.expensesUC3.Name = "expensesUC3";
-            this.expensesUC3.Size = new System.Drawing.Size(257, 144);
-            this.expensesUC3.TabIndex = 2;
             // 
             // datelb
             // 
@@ -269,6 +246,30 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Employees Salary";
             // 
+            // expensesUC1
+            // 
+            this.expensesUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.expensesUC1.Location = new System.Drawing.Point(3, 3);
+            this.expensesUC1.Name = "expensesUC1";
+            this.expensesUC1.Size = new System.Drawing.Size(257, 144);
+            this.expensesUC1.TabIndex = 0;
+            // 
+            // expensesUC2
+            // 
+            this.expensesUC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.expensesUC2.Location = new System.Drawing.Point(266, 3);
+            this.expensesUC2.Name = "expensesUC2";
+            this.expensesUC2.Size = new System.Drawing.Size(257, 144);
+            this.expensesUC2.TabIndex = 1;
+            // 
+            // expensesUC3
+            // 
+            this.expensesUC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.expensesUC3.Location = new System.Drawing.Point(3, 153);
+            this.expensesUC3.Name = "expensesUC3";
+            this.expensesUC3.Size = new System.Drawing.Size(257, 144);
+            this.expensesUC3.TabIndex = 2;
+            // 
             // expenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -285,9 +286,9 @@
             this.Name = "expenses";
             this.siticoneCustomGradientPanel1.ResumeLayout(false);
             this.siticoneCustomGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.leftPanel3.ResumeLayout(false);
             this.leftPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.siticoneCustomGradientPanel2.ResumeLayout(false);
             this.siticoneCustomGradientPanel2.PerformLayout();

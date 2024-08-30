@@ -111,6 +111,12 @@
     <Compile Include="additems.Designer.cs">
       <DependentUpon>additems.cs</DependentUpon>
     </Compile>
+    <Compile Include="addproductscard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addproductscard.Designer.cs">
+      <DependentUpon>addproductscard.cs</DependentUpon>
+    </Compile>
     <Compile Include="addsuppliers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     <Compile Include="supplierproducts.Designer.cs">
       <DependentUpon>supplierproducts.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addproductscard.resx">
+      <DependentUpon>addproductscard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Billings.resx">
       <DependentUpon>Billings.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="itemUS.resx">
       <DependentUpon>itemUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplierproducts.resx">
+      <DependentUpon>supplierproducts.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

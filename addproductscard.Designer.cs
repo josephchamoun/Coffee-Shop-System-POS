@@ -1,6 +1,6 @@
 ﻿namespace summer2
 {
-    partial class addemployeescard
+    partial class addproductscard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,42 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.image = new Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox();
+            this.siticoneButton1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.siticoneGroupBox1 = new Siticone.Desktop.UI.WinForms.SiticoneGroupBox();
-            this.siticoneTextBox7 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneTextBox6 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneTextBox5 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.siticoneTextBox4 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.siticoneTextBox3 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.siticoneTextBox2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.nametb = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneButton1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
+            this.siticoneComboBox1 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
             this.siticoneGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // image
+            // siticoneButton1
             // 
-            this.image.BackColor = System.Drawing.Color.White;
-            this.image.Image = global::summer2.Properties.Resources.No_Image_Available;
-            this.image.ImageRotate = 0F;
-            this.image.Location = new System.Drawing.Point(23, 21);
-            this.image.Name = "image";
-            this.image.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.image.Size = new System.Drawing.Size(202, 197);
-            this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.image.TabIndex = 0;
-            this.image.TabStop = false;
-            this.image.Click += new System.EventHandler(this.picture_Click);
+            this.siticoneButton1.BackColor = System.Drawing.Color.White;
+            this.siticoneButton1.BorderRadius = 20;
+            this.siticoneButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.siticoneButton1.FillColor = System.Drawing.Color.Black;
+            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton1.Location = new System.Drawing.Point(187, 303);
+            this.siticoneButton1.Name = "siticoneButton1";
+            this.siticoneButton1.Size = new System.Drawing.Size(180, 45);
+            this.siticoneButton1.TabIndex = 5;
+            this.siticoneButton1.Text = "Save";
             // 
             // siticoneGroupBox1
             // 
             this.siticoneGroupBox1.BackColor = System.Drawing.Color.White;
             this.siticoneGroupBox1.BorderColor = System.Drawing.Color.Black;
             this.siticoneGroupBox1.BorderRadius = 10;
-            this.siticoneGroupBox1.Controls.Add(this.siticoneTextBox7);
-            this.siticoneGroupBox1.Controls.Add(this.siticoneTextBox6);
-            this.siticoneGroupBox1.Controls.Add(this.siticoneTextBox5);
+            this.siticoneGroupBox1.Controls.Add(this.siticoneComboBox1);
             this.siticoneGroupBox1.Controls.Add(this.siticoneTextBox4);
             this.siticoneGroupBox1.Controls.Add(this.siticoneTextBox3);
             this.siticoneGroupBox1.Controls.Add(this.siticoneTextBox2);
@@ -71,83 +68,11 @@
             this.siticoneGroupBox1.CustomBorderColor = System.Drawing.Color.Black;
             this.siticoneGroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneGroupBox1.ForeColor = System.Drawing.Color.White;
-            this.siticoneGroupBox1.Location = new System.Drawing.Point(255, 21);
+            this.siticoneGroupBox1.Location = new System.Drawing.Point(120, 19);
             this.siticoneGroupBox1.Name = "siticoneGroupBox1";
-            this.siticoneGroupBox1.Size = new System.Drawing.Size(330, 361);
-            this.siticoneGroupBox1.TabIndex = 1;
+            this.siticoneGroupBox1.Size = new System.Drawing.Size(330, 278);
+            this.siticoneGroupBox1.TabIndex = 4;
             this.siticoneGroupBox1.Text = "Details";
-            // 
-            // siticoneTextBox7
-            // 
-            this.siticoneTextBox7.BackColor = System.Drawing.Color.White;
-            this.siticoneTextBox7.BorderColor = System.Drawing.Color.Black;
-            this.siticoneTextBox7.BorderRadius = 15;
-            this.siticoneTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox7.DefaultText = "";
-            this.siticoneTextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox7.ForeColor = System.Drawing.Color.Black;
-            this.siticoneTextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox7.Location = new System.Drawing.Point(12, 306);
-            this.siticoneTextBox7.Name = "siticoneTextBox7";
-            this.siticoneTextBox7.PasswordChar = '\0';
-            this.siticoneTextBox7.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox7.PlaceholderText = "Position";
-            this.siticoneTextBox7.SelectedText = "";
-            this.siticoneTextBox7.Size = new System.Drawing.Size(303, 36);
-            this.siticoneTextBox7.TabIndex = 6;
-            // 
-            // siticoneTextBox6
-            // 
-            this.siticoneTextBox6.BackColor = System.Drawing.Color.White;
-            this.siticoneTextBox6.BorderColor = System.Drawing.Color.Black;
-            this.siticoneTextBox6.BorderRadius = 15;
-            this.siticoneTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox6.DefaultText = "";
-            this.siticoneTextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox6.ForeColor = System.Drawing.Color.Black;
-            this.siticoneTextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox6.Location = new System.Drawing.Point(12, 264);
-            this.siticoneTextBox6.Name = "siticoneTextBox6";
-            this.siticoneTextBox6.PasswordChar = '\0';
-            this.siticoneTextBox6.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox6.PlaceholderText = "Date Of Birth";
-            this.siticoneTextBox6.SelectedText = "";
-            this.siticoneTextBox6.Size = new System.Drawing.Size(303, 36);
-            this.siticoneTextBox6.TabIndex = 5;
-            // 
-            // siticoneTextBox5
-            // 
-            this.siticoneTextBox5.BackColor = System.Drawing.Color.White;
-            this.siticoneTextBox5.BorderColor = System.Drawing.Color.Black;
-            this.siticoneTextBox5.BorderRadius = 15;
-            this.siticoneTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox5.DefaultText = "";
-            this.siticoneTextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox5.ForeColor = System.Drawing.Color.Black;
-            this.siticoneTextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox5.Location = new System.Drawing.Point(12, 222);
-            this.siticoneTextBox5.Name = "siticoneTextBox5";
-            this.siticoneTextBox5.PasswordChar = '\0';
-            this.siticoneTextBox5.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox5.PlaceholderText = "Address";
-            this.siticoneTextBox5.SelectedText = "";
-            this.siticoneTextBox5.Size = new System.Drawing.Size(303, 36);
-            this.siticoneTextBox5.TabIndex = 4;
             // 
             // siticoneTextBox4
             // 
@@ -168,7 +93,7 @@
             this.siticoneTextBox4.Name = "siticoneTextBox4";
             this.siticoneTextBox4.PasswordChar = '\0';
             this.siticoneTextBox4.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox4.PlaceholderText = "Email";
+            this.siticoneTextBox4.PlaceholderText = "Date";
             this.siticoneTextBox4.SelectedText = "";
             this.siticoneTextBox4.Size = new System.Drawing.Size(303, 36);
             this.siticoneTextBox4.TabIndex = 3;
@@ -192,7 +117,7 @@
             this.siticoneTextBox3.Name = "siticoneTextBox3";
             this.siticoneTextBox3.PasswordChar = '\0';
             this.siticoneTextBox3.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox3.PlaceholderText = "Phone Number";
+            this.siticoneTextBox3.PlaceholderText = "Price";
             this.siticoneTextBox3.SelectedText = "";
             this.siticoneTextBox3.Size = new System.Drawing.Size(303, 36);
             this.siticoneTextBox3.TabIndex = 2;
@@ -216,7 +141,7 @@
             this.siticoneTextBox2.Name = "siticoneTextBox2";
             this.siticoneTextBox2.PasswordChar = '\0';
             this.siticoneTextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox2.PlaceholderText = "Last Name";
+            this.siticoneTextBox2.PlaceholderText = "Quantity";
             this.siticoneTextBox2.SelectedText = "";
             this.siticoneTextBox2.Size = new System.Drawing.Size(303, 36);
             this.siticoneTextBox2.TabIndex = 1;
@@ -240,41 +165,38 @@
             this.nametb.Name = "nametb";
             this.nametb.PasswordChar = '\0';
             this.nametb.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.nametb.PlaceholderText = "First Name";
+            this.nametb.PlaceholderText = "Product Name";
             this.nametb.SelectedText = "";
             this.nametb.Size = new System.Drawing.Size(303, 36);
             this.nametb.TabIndex = 0;
             // 
-            // siticoneButton1
+            // siticoneComboBox1
             // 
-            this.siticoneButton1.BackColor = System.Drawing.Color.White;
-            this.siticoneButton1.BorderRadius = 20;
-            this.siticoneButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton1.FillColor = System.Drawing.Color.Black;
-            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.Location = new System.Drawing.Point(334, 388);
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.Size = new System.Drawing.Size(180, 45);
-            this.siticoneButton1.TabIndex = 2;
-            this.siticoneButton1.Text = "Save";
-            this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
+            this.siticoneComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneComboBox1.BorderColor = System.Drawing.Color.Black;
+            this.siticoneComboBox1.BorderRadius = 15;
+            this.siticoneComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.siticoneComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.siticoneComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.siticoneComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.siticoneComboBox1.ItemHeight = 30;
+            this.siticoneComboBox1.Items.AddRange(new object[] {
+            "suppliers name"});
+            this.siticoneComboBox1.Location = new System.Drawing.Point(12, 222);
+            this.siticoneComboBox1.Name = "siticoneComboBox1";
+            this.siticoneComboBox1.Size = new System.Drawing.Size(303, 36);
+            this.siticoneComboBox1.TabIndex = 5;
             // 
-            // addemployeescard
+            // addproductscard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 454);
+            this.ClientSize = new System.Drawing.Size(593, 375);
             this.Controls.Add(this.siticoneButton1);
             this.Controls.Add(this.siticoneGroupBox1);
-            this.Controls.Add(this.image);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "addemployeescard";
-            ((System.ComponentModel.ISupportInitialize)(this.image)).EndInit();
+            this.Name = "addproductscard";
             this.siticoneGroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -282,15 +204,12 @@
 
         #endregion
 
-        private Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox image;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton siticoneButton1;
         private Siticone.Desktop.UI.WinForms.SiticoneGroupBox siticoneGroupBox1;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox nametb;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox7;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox6;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox5;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox4;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox3;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox2;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton siticoneButton1;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox nametb;
+        private Siticone.Desktop.UI.WinForms.SiticoneComboBox siticoneComboBox1;
     }
 }

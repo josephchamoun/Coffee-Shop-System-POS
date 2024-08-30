@@ -28,85 +28,154 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.siticoneCustomGradientPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
-            this.datelb = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.siticoneCustomGradientPanel2 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
+            this.mainpanel = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
+            this.infopanel = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
+            this.threedots = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.hourslb = new System.Windows.Forms.Label();
+            this.periodlb = new System.Windows.Forms.Label();
+            this.dayslb = new System.Windows.Forms.Label();
+            this.daysoffnum = new System.Windows.Forms.Label();
+            this.daysoff = new System.Windows.Forms.Label();
+            this.daysofflb = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.siticoneCirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.siticoneCustomGradientPanel1.SuspendLayout();
-            this.siticoneCustomGradientPanel2.SuspendLayout();
+            this.shiftlb = new System.Windows.Forms.Label();
+            this.pic = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.role = new System.Windows.Forms.Label();
+            this.namelb = new System.Windows.Forms.Label();
+            this.mainpanel.SuspendLayout();
+            this.infopanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.threedots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
-            // siticoneCustomGradientPanel1
+            // mainpanel
             // 
-            this.siticoneCustomGradientPanel1.BorderRadius = 30;
-            this.siticoneCustomGradientPanel1.Controls.Add(this.siticoneCustomGradientPanel2);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.siticoneCirclePictureBox1);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.label5);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.datelb);
-            this.siticoneCustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.Location = new System.Drawing.Point(3, 0);
-            this.siticoneCustomGradientPanel1.Name = "siticoneCustomGradientPanel1";
-            this.siticoneCustomGradientPanel1.Size = new System.Drawing.Size(1455, 118);
-            this.siticoneCustomGradientPanel1.TabIndex = 1;
+            this.mainpanel.BorderRadius = 30;
+            this.mainpanel.Controls.Add(this.infopanel);
+            this.mainpanel.Controls.Add(this.pic);
+            this.mainpanel.Controls.Add(this.role);
+            this.mainpanel.Controls.Add(this.namelb);
+            this.mainpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.mainpanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.mainpanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.mainpanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.mainpanel.Location = new System.Drawing.Point(3, 0);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(1455, 118);
+            this.mainpanel.TabIndex = 1;
+            this.mainpanel.Resize += new System.EventHandler(this.mainpanel_Resize);
             // 
-            // datelb
+            // infopanel
             // 
-            this.datelb.AutoSize = true;
-            this.datelb.BackColor = System.Drawing.Color.Transparent;
-            this.datelb.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.datelb.Location = new System.Drawing.Point(99, 39);
-            this.datelb.Name = "datelb";
-            this.datelb.Size = new System.Drawing.Size(224, 30);
-            this.datelb.TabIndex = 36;
-            this.datelb.Text = "Joseph Chamoun";
+            this.infopanel.BackColor = System.Drawing.Color.Transparent;
+            this.infopanel.BorderRadius = 30;
+            this.infopanel.Controls.Add(this.threedots);
+            this.infopanel.Controls.Add(this.hourslb);
+            this.infopanel.Controls.Add(this.periodlb);
+            this.infopanel.Controls.Add(this.dayslb);
+            this.infopanel.Controls.Add(this.daysoffnum);
+            this.infopanel.Controls.Add(this.daysoff);
+            this.infopanel.Controls.Add(this.daysofflb);
+            this.infopanel.Controls.Add(this.guna2PictureBox2);
+            this.infopanel.Controls.Add(this.guna2PictureBox1);
+            this.infopanel.Controls.Add(this.shiftlb);
+            this.infopanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
+            this.infopanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
+            this.infopanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
+            this.infopanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
+            this.infopanel.Location = new System.Drawing.Point(505, 0);
+            this.infopanel.Name = "infopanel";
+            this.infopanel.Size = new System.Drawing.Size(950, 118);
+            this.infopanel.TabIndex = 44;
+            this.infopanel.Resize += new System.EventHandler(this.infopanel_Resize);
             // 
-            // label5
+            // threedots
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label5.Location = new System.Drawing.Point(329, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 24);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "(Manager)";
+            this.threedots.BackColor = System.Drawing.Color.Transparent;
+            this.threedots.Image = global::summer2.Properties.Resources.icons8_three_dots_16;
+            this.threedots.ImageRotate = 0F;
+            this.threedots.Location = new System.Drawing.Point(897, 2);
+            this.threedots.Name = "threedots";
+            this.threedots.Size = new System.Drawing.Size(36, 32);
+            this.threedots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.threedots.TabIndex = 45;
+            this.threedots.TabStop = false;
             // 
-            // siticoneCustomGradientPanel2
+            // hourslb
             // 
-            this.siticoneCustomGradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneCustomGradientPanel2.Controls.Add(this.label7);
-            this.siticoneCustomGradientPanel2.Controls.Add(this.label6);
-            this.siticoneCustomGradientPanel2.Controls.Add(this.label4);
-            this.siticoneCustomGradientPanel2.Controls.Add(this.label3);
-            this.siticoneCustomGradientPanel2.Controls.Add(this.label1);
-            this.siticoneCustomGradientPanel2.Controls.Add(this.guna2PictureBox2);
-            this.siticoneCustomGradientPanel2.Controls.Add(this.guna2PictureBox1);
-            this.siticoneCustomGradientPanel2.Controls.Add(this.label2);
-            this.siticoneCustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(170)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel2.Location = new System.Drawing.Point(468, 0);
-            this.siticoneCustomGradientPanel2.Name = "siticoneCustomGradientPanel2";
-            this.siticoneCustomGradientPanel2.Size = new System.Drawing.Size(987, 118);
-            this.siticoneCustomGradientPanel2.TabIndex = 44;
+            this.hourslb.AutoSize = true;
+            this.hourslb.BackColor = System.Drawing.Color.Transparent;
+            this.hourslb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hourslb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.hourslb.Location = new System.Drawing.Point(617, 8);
+            this.hourslb.Name = "hourslb";
+            this.hourslb.Size = new System.Drawing.Size(89, 26);
+            this.hourslb.TabIndex = 44;
+            this.hourslb.Text = "(8 hrs)";
+            // 
+            // periodlb
+            // 
+            this.periodlb.AutoSize = true;
+            this.periodlb.BackColor = System.Drawing.Color.Transparent;
+            this.periodlb.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.periodlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.periodlb.Location = new System.Drawing.Point(562, 45);
+            this.periodlb.Name = "periodlb";
+            this.periodlb.Size = new System.Drawing.Size(144, 22);
+            this.periodlb.TabIndex = 43;
+            this.periodlb.Text = "(This Month):";
+            // 
+            // dayslb
+            // 
+            this.dayslb.AutoSize = true;
+            this.dayslb.BackColor = System.Drawing.Color.Transparent;
+            this.dayslb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayslb.ForeColor = System.Drawing.Color.DarkRed;
+            this.dayslb.Location = new System.Drawing.Point(462, 71);
+            this.dayslb.Name = "dayslb";
+            this.dayslb.Size = new System.Drawing.Size(206, 26);
+            this.dayslb.TabIndex = 42;
+            this.dayslb.Text = "Wed 01, Sat 06 ...";
+            // 
+            // daysoffnum
+            // 
+            this.daysoffnum.AutoSize = true;
+            this.daysoffnum.BackColor = System.Drawing.Color.Transparent;
+            this.daysoffnum.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daysoffnum.ForeColor = System.Drawing.Color.DarkRed;
+            this.daysoffnum.Location = new System.Drawing.Point(709, 45);
+            this.daysoffnum.Name = "daysoffnum";
+            this.daysoffnum.Size = new System.Drawing.Size(27, 26);
+            this.daysoffnum.TabIndex = 41;
+            this.daysoffnum.Text = "8";
+            // 
+            // daysoff
+            // 
+            this.daysoff.AutoSize = true;
+            this.daysoff.BackColor = System.Drawing.Color.Transparent;
+            this.daysoff.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daysoff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.daysoff.Location = new System.Drawing.Point(332, 71);
+            this.daysoff.Name = "daysoff";
+            this.daysoff.Size = new System.Drawing.Size(115, 26);
+            this.daysoff.TabIndex = 40;
+            this.daysoff.Text = "Days Off:";
+            this.daysoff.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // daysofflb
+            // 
+            this.daysofflb.AutoSize = true;
+            this.daysofflb.BackColor = System.Drawing.Color.Transparent;
+            this.daysofflb.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daysofflb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.daysofflb.Location = new System.Drawing.Point(332, 45);
+            this.daysofflb.Name = "daysofflb";
+            this.daysofflb.Size = new System.Drawing.Size(229, 26);
+            this.daysofflb.TabIndex = 39;
+            this.daysofflb.Text = "Number of Days Off";
             // 
             // guna2PictureBox2
             // 
@@ -132,124 +201,91 @@
             this.guna2PictureBox1.TabIndex = 38;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // siticoneCirclePictureBox1
+            // shiftlb
             // 
-            this.siticoneCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneCirclePictureBox1.Image = global::summer2.Properties.Resources.No_Image_Available;
-            this.siticoneCirclePictureBox1.ImageRotate = 0F;
-            this.siticoneCirclePictureBox1.Location = new System.Drawing.Point(33, 22);
-            this.siticoneCirclePictureBox1.Name = "siticoneCirclePictureBox1";
-            this.siticoneCirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCirclePictureBox1.Size = new System.Drawing.Size(60, 58);
-            this.siticoneCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.siticoneCirclePictureBox1.TabIndex = 43;
-            this.siticoneCirclePictureBox1.TabStop = false;
+            this.shiftlb.AutoSize = true;
+            this.shiftlb.BackColor = System.Drawing.Color.Transparent;
+            this.shiftlb.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shiftlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.shiftlb.Location = new System.Drawing.Point(332, 5);
+            this.shiftlb.Name = "shiftlb";
+            this.shiftlb.Size = new System.Drawing.Size(274, 30);
+            this.shiftlb.TabIndex = 36;
+            this.shiftlb.Text = "8:00 A.M - 4:00 P.M";
             // 
-            // label2
+            // pic
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label2.Location = new System.Drawing.Point(332, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(274, 30);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "8:00 A.M - 4:00 P.M";
+            this.pic.BackColor = System.Drawing.Color.Transparent;
+            this.pic.Image = global::summer2.Properties.Resources.No_Image_Available;
+            this.pic.ImageRotate = 0F;
+            this.pic.Location = new System.Drawing.Point(33, 22);
+            this.pic.Name = "pic";
+            this.pic.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pic.Size = new System.Drawing.Size(60, 58);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic.TabIndex = 43;
+            this.pic.TabStop = false;
             // 
-            // label1
+            // role
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(332, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 26);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Number of Days Off";
+            this.role.AutoSize = true;
+            this.role.BackColor = System.Drawing.Color.Transparent;
+            this.role.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.role.Location = new System.Drawing.Point(329, 45);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(115, 24);
+            this.role.TabIndex = 42;
+            this.role.Text = "(Manager)";
             // 
-            // label3
+            // namelb
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(332, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 26);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Days Off:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(709, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 26);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "8";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkRed;
-            this.label6.Location = new System.Drawing.Point(462, 71);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(206, 26);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Wed 01, Sat 06 ...";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label7.Location = new System.Drawing.Point(562, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 22);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "(This Month):";
+            this.namelb.AutoSize = true;
+            this.namelb.BackColor = System.Drawing.Color.Transparent;
+            this.namelb.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.namelb.Location = new System.Drawing.Point(99, 39);
+            this.namelb.Name = "namelb";
+            this.namelb.Size = new System.Drawing.Size(224, 30);
+            this.namelb.TabIndex = 36;
+            this.namelb.Text = "Joseph Chamoun";
             // 
             // EmployeesShiftsUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.Controls.Add(this.siticoneCustomGradientPanel1);
+            this.Controls.Add(this.mainpanel);
             this.Name = "EmployeesShiftsUC";
             this.Size = new System.Drawing.Size(1458, 118);
-            this.siticoneCustomGradientPanel1.ResumeLayout(false);
-            this.siticoneCustomGradientPanel1.PerformLayout();
-            this.siticoneCustomGradientPanel2.ResumeLayout(false);
-            this.siticoneCustomGradientPanel2.PerformLayout();
+            this.mainpanel.ResumeLayout(false);
+            this.mainpanel.PerformLayout();
+            this.infopanel.ResumeLayout(false);
+            this.infopanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.threedots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel siticoneCustomGradientPanel1;
+        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel mainpanel;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label datelb;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox siticoneCirclePictureBox1;
-        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel siticoneCustomGradientPanel2;
+        private System.Windows.Forms.Label namelb;
+        private System.Windows.Forms.Label role;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pic;
+        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel infopanel;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label dayslb;
+        private System.Windows.Forms.Label daysoffnum;
+        private System.Windows.Forms.Label daysoff;
+        private System.Windows.Forms.Label daysofflb;
+        private System.Windows.Forms.Label shiftlb;
+        private System.Windows.Forms.Label periodlb;
+        private System.Windows.Forms.Label hourslb;
+        private Guna.UI2.WinForms.Guna2PictureBox threedots;
     }
 }

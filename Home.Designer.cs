@@ -29,25 +29,9 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControl21 = new summer2.categoryUS();
-            this.userControl22 = new summer2.categoryUS();
-            this.userControl23 = new summer2.categoryUS();
-            this.userControl24 = new summer2.categoryUS();
-            this.userControl26 = new summer2.categoryUS();
-            this.userControl25 = new summer2.categoryUS();
-            this.userControl28 = new summer2.categoryUS();
-            this.userControl29 = new summer2.categoryUS();
-            this.userControl210 = new summer2.categoryUS();
             this.label1 = new System.Windows.Forms.Label();
             this.checkoutPanel = new System.Windows.Forms.Panel();
             this.displayitems = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkoutitemsUS1 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS2 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS3 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS5 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS6 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS4 = new summer2.checkoutitemsUS();
-            this.checkoutitemsUS7 = new summer2.checkoutitemsUS();
             this.totallbprice = new System.Windows.Forms.Label();
             this.price2 = new System.Windows.Forms.Label();
             this.price1 = new System.Windows.Forms.Label();
@@ -61,13 +45,29 @@
             this.resultnum = new System.Windows.Forms.Label();
             this.coffeemenu = new System.Windows.Forms.Label();
             this.menuFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
+            this.searchbar = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.additems = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
             this.itemUS1 = new summer2.itemUS();
             this.itemUS2 = new summer2.itemUS();
             this.itemUS3 = new summer2.itemUS();
             this.itemUS4 = new summer2.itemUS();
-            this.addButton = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
-            this.searchbar = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.additems = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
+            this.checkoutitemsUS1 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS2 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS3 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS5 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS6 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS4 = new summer2.checkoutitemsUS();
+            this.checkoutitemsUS7 = new summer2.checkoutitemsUS();
+            this.userControl21 = new summer2.categoryUS();
+            this.userControl22 = new summer2.categoryUS();
+            this.userControl23 = new summer2.categoryUS();
+            this.userControl24 = new summer2.categoryUS();
+            this.userControl26 = new summer2.categoryUS();
+            this.userControl25 = new summer2.categoryUS();
+            this.userControl28 = new summer2.categoryUS();
+            this.userControl29 = new summer2.categoryUS();
+            this.userControl210 = new summer2.categoryUS();
             this.flowLayoutPanel1.SuspendLayout();
             this.checkoutPanel.SuspendLayout();
             this.displayitems.SuspendLayout();
@@ -91,77 +91,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1245, 193);
             this.flowLayoutPanel1.TabIndex = 7;
             this.flowLayoutPanel1.WrapContents = false;
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl21.Location = new System.Drawing.Point(3, 3);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(150, 155);
-            this.userControl21.TabIndex = 0;
-            // 
-            // userControl22
-            // 
-            this.userControl22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl22.Location = new System.Drawing.Point(159, 3);
-            this.userControl22.Name = "userControl22";
-            this.userControl22.Size = new System.Drawing.Size(150, 155);
-            this.userControl22.TabIndex = 1;
-            // 
-            // userControl23
-            // 
-            this.userControl23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl23.Location = new System.Drawing.Point(315, 3);
-            this.userControl23.Name = "userControl23";
-            this.userControl23.Size = new System.Drawing.Size(150, 155);
-            this.userControl23.TabIndex = 2;
-            // 
-            // userControl24
-            // 
-            this.userControl24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl24.Location = new System.Drawing.Point(471, 3);
-            this.userControl24.Name = "userControl24";
-            this.userControl24.Size = new System.Drawing.Size(150, 155);
-            this.userControl24.TabIndex = 3;
-            // 
-            // userControl26
-            // 
-            this.userControl26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl26.Location = new System.Drawing.Point(627, 3);
-            this.userControl26.Name = "userControl26";
-            this.userControl26.Size = new System.Drawing.Size(150, 155);
-            this.userControl26.TabIndex = 5;
-            // 
-            // userControl25
-            // 
-            this.userControl25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl25.Location = new System.Drawing.Point(783, 3);
-            this.userControl25.Name = "userControl25";
-            this.userControl25.Size = new System.Drawing.Size(150, 155);
-            this.userControl25.TabIndex = 6;
-            // 
-            // userControl28
-            // 
-            this.userControl28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl28.Location = new System.Drawing.Point(939, 3);
-            this.userControl28.Name = "userControl28";
-            this.userControl28.Size = new System.Drawing.Size(150, 155);
-            this.userControl28.TabIndex = 8;
-            // 
-            // userControl29
-            // 
-            this.userControl29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.userControl29.Location = new System.Drawing.Point(1095, 3);
-            this.userControl29.Name = "userControl29";
-            this.userControl29.Size = new System.Drawing.Size(150, 155);
-            this.userControl29.TabIndex = 9;
-            // 
-            // userControl210
-            // 
-            this.userControl210.Location = new System.Drawing.Point(1251, 3);
-            this.userControl210.Name = "userControl210";
-            this.userControl210.Size = new System.Drawing.Size(150, 155);
-            this.userControl210.TabIndex = 10;
             // 
             // label1
             // 
@@ -209,62 +138,6 @@
             this.displayitems.Name = "displayitems";
             this.displayitems.Size = new System.Drawing.Size(423, 387);
             this.displayitems.TabIndex = 34;
-            // 
-            // checkoutitemsUS1
-            // 
-            this.checkoutitemsUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS1.Location = new System.Drawing.Point(3, 3);
-            this.checkoutitemsUS1.Name = "checkoutitemsUS1";
-            this.checkoutitemsUS1.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS1.TabIndex = 0;
-            // 
-            // checkoutitemsUS2
-            // 
-            this.checkoutitemsUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS2.Location = new System.Drawing.Point(3, 114);
-            this.checkoutitemsUS2.Name = "checkoutitemsUS2";
-            this.checkoutitemsUS2.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS2.TabIndex = 1;
-            // 
-            // checkoutitemsUS3
-            // 
-            this.checkoutitemsUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS3.Location = new System.Drawing.Point(3, 225);
-            this.checkoutitemsUS3.Name = "checkoutitemsUS3";
-            this.checkoutitemsUS3.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS3.TabIndex = 2;
-            // 
-            // checkoutitemsUS5
-            // 
-            this.checkoutitemsUS5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS5.Location = new System.Drawing.Point(3, 336);
-            this.checkoutitemsUS5.Name = "checkoutitemsUS5";
-            this.checkoutitemsUS5.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS5.TabIndex = 4;
-            // 
-            // checkoutitemsUS6
-            // 
-            this.checkoutitemsUS6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS6.Location = new System.Drawing.Point(3, 447);
-            this.checkoutitemsUS6.Name = "checkoutitemsUS6";
-            this.checkoutitemsUS6.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS6.TabIndex = 5;
-            // 
-            // checkoutitemsUS4
-            // 
-            this.checkoutitemsUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS4.Location = new System.Drawing.Point(3, 558);
-            this.checkoutitemsUS4.Name = "checkoutitemsUS4";
-            this.checkoutitemsUS4.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS4.TabIndex = 6;
-            // 
-            // checkoutitemsUS7
-            // 
-            this.checkoutitemsUS7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.checkoutitemsUS7.Location = new System.Drawing.Point(3, 669);
-            this.checkoutitemsUS7.Name = "checkoutitemsUS7";
-            this.checkoutitemsUS7.Size = new System.Drawing.Size(354, 105);
-            this.checkoutitemsUS7.TabIndex = 7;
             // 
             // totallbprice
             // 
@@ -423,38 +296,6 @@
             this.menuFlowLayoutPanel.Size = new System.Drawing.Size(1237, 441);
             this.menuFlowLayoutPanel.TabIndex = 31;
             // 
-            // itemUS1
-            // 
-            this.itemUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS1.Location = new System.Drawing.Point(3, 3);
-            this.itemUS1.Name = "itemUS1";
-            this.itemUS1.Size = new System.Drawing.Size(439, 260);
-            this.itemUS1.TabIndex = 0;
-            // 
-            // itemUS2
-            // 
-            this.itemUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS2.Location = new System.Drawing.Point(448, 3);
-            this.itemUS2.Name = "itemUS2";
-            this.itemUS2.Size = new System.Drawing.Size(439, 260);
-            this.itemUS2.TabIndex = 1;
-            // 
-            // itemUS3
-            // 
-            this.itemUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS3.Location = new System.Drawing.Point(3, 269);
-            this.itemUS3.Name = "itemUS3";
-            this.itemUS3.Size = new System.Drawing.Size(439, 260);
-            this.itemUS3.TabIndex = 2;
-            // 
-            // itemUS4
-            // 
-            this.itemUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.itemUS4.Location = new System.Drawing.Point(448, 269);
-            this.itemUS4.Name = "itemUS4";
-            this.itemUS4.Size = new System.Drawing.Size(439, 260);
-            this.itemUS4.TabIndex = 3;
-            // 
             // addButton
             // 
             this.addButton.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -518,6 +359,166 @@
             this.additems.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
             this.additems.Size = new System.Drawing.Size(40, 40);
             this.additems.TabIndex = 32;
+            // 
+            // itemUS1
+            // 
+            this.itemUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS1.Location = new System.Drawing.Point(3, 3);
+            this.itemUS1.Name = "itemUS1";
+            this.itemUS1.Size = new System.Drawing.Size(439, 260);
+            this.itemUS1.TabIndex = 0;
+            this.itemUS1.Load += new System.EventHandler(this.itemUS1_Load);
+            // 
+            // itemUS2
+            // 
+            this.itemUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS2.Location = new System.Drawing.Point(448, 3);
+            this.itemUS2.Name = "itemUS2";
+            this.itemUS2.Size = new System.Drawing.Size(439, 260);
+            this.itemUS2.TabIndex = 1;
+            // 
+            // itemUS3
+            // 
+            this.itemUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS3.Location = new System.Drawing.Point(3, 269);
+            this.itemUS3.Name = "itemUS3";
+            this.itemUS3.Size = new System.Drawing.Size(439, 260);
+            this.itemUS3.TabIndex = 2;
+            // 
+            // itemUS4
+            // 
+            this.itemUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.itemUS4.Location = new System.Drawing.Point(448, 269);
+            this.itemUS4.Name = "itemUS4";
+            this.itemUS4.Size = new System.Drawing.Size(439, 260);
+            this.itemUS4.TabIndex = 3;
+            // 
+            // checkoutitemsUS1
+            // 
+            this.checkoutitemsUS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS1.Location = new System.Drawing.Point(3, 3);
+            this.checkoutitemsUS1.Name = "checkoutitemsUS1";
+            this.checkoutitemsUS1.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS1.TabIndex = 0;
+            // 
+            // checkoutitemsUS2
+            // 
+            this.checkoutitemsUS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS2.Location = new System.Drawing.Point(3, 114);
+            this.checkoutitemsUS2.Name = "checkoutitemsUS2";
+            this.checkoutitemsUS2.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS2.TabIndex = 1;
+            // 
+            // checkoutitemsUS3
+            // 
+            this.checkoutitemsUS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS3.Location = new System.Drawing.Point(3, 225);
+            this.checkoutitemsUS3.Name = "checkoutitemsUS3";
+            this.checkoutitemsUS3.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS3.TabIndex = 2;
+            // 
+            // checkoutitemsUS5
+            // 
+            this.checkoutitemsUS5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS5.Location = new System.Drawing.Point(3, 336);
+            this.checkoutitemsUS5.Name = "checkoutitemsUS5";
+            this.checkoutitemsUS5.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS5.TabIndex = 4;
+            // 
+            // checkoutitemsUS6
+            // 
+            this.checkoutitemsUS6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS6.Location = new System.Drawing.Point(3, 447);
+            this.checkoutitemsUS6.Name = "checkoutitemsUS6";
+            this.checkoutitemsUS6.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS6.TabIndex = 5;
+            // 
+            // checkoutitemsUS4
+            // 
+            this.checkoutitemsUS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS4.Location = new System.Drawing.Point(3, 558);
+            this.checkoutitemsUS4.Name = "checkoutitemsUS4";
+            this.checkoutitemsUS4.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS4.TabIndex = 6;
+            // 
+            // checkoutitemsUS7
+            // 
+            this.checkoutitemsUS7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.checkoutitemsUS7.Location = new System.Drawing.Point(3, 669);
+            this.checkoutitemsUS7.Name = "checkoutitemsUS7";
+            this.checkoutitemsUS7.Size = new System.Drawing.Size(354, 105);
+            this.checkoutitemsUS7.TabIndex = 7;
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl21.Location = new System.Drawing.Point(3, 3);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(150, 155);
+            this.userControl21.TabIndex = 0;
+            // 
+            // userControl22
+            // 
+            this.userControl22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl22.Location = new System.Drawing.Point(159, 3);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(150, 155);
+            this.userControl22.TabIndex = 1;
+            // 
+            // userControl23
+            // 
+            this.userControl23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl23.Location = new System.Drawing.Point(315, 3);
+            this.userControl23.Name = "userControl23";
+            this.userControl23.Size = new System.Drawing.Size(150, 155);
+            this.userControl23.TabIndex = 2;
+            // 
+            // userControl24
+            // 
+            this.userControl24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl24.Location = new System.Drawing.Point(471, 3);
+            this.userControl24.Name = "userControl24";
+            this.userControl24.Size = new System.Drawing.Size(150, 155);
+            this.userControl24.TabIndex = 3;
+            // 
+            // userControl26
+            // 
+            this.userControl26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl26.Location = new System.Drawing.Point(627, 3);
+            this.userControl26.Name = "userControl26";
+            this.userControl26.Size = new System.Drawing.Size(150, 155);
+            this.userControl26.TabIndex = 5;
+            // 
+            // userControl25
+            // 
+            this.userControl25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl25.Location = new System.Drawing.Point(783, 3);
+            this.userControl25.Name = "userControl25";
+            this.userControl25.Size = new System.Drawing.Size(150, 155);
+            this.userControl25.TabIndex = 6;
+            // 
+            // userControl28
+            // 
+            this.userControl28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl28.Location = new System.Drawing.Point(939, 3);
+            this.userControl28.Name = "userControl28";
+            this.userControl28.Size = new System.Drawing.Size(150, 155);
+            this.userControl28.TabIndex = 8;
+            // 
+            // userControl29
+            // 
+            this.userControl29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
+            this.userControl29.Location = new System.Drawing.Point(1095, 3);
+            this.userControl29.Name = "userControl29";
+            this.userControl29.Size = new System.Drawing.Size(150, 155);
+            this.userControl29.TabIndex = 9;
+            // 
+            // userControl210
+            // 
+            this.userControl210.Location = new System.Drawing.Point(1251, 3);
+            this.userControl210.Name = "userControl210";
+            this.userControl210.Size = new System.Drawing.Size(150, 155);
+            this.userControl210.TabIndex = 10;
             // 
             // Home
             // 

@@ -284,6 +284,11 @@ namespace summer2
         {
 
         }
+
+        private void itemUS1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
