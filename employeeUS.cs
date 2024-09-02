@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReaLTaiizor.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,55 @@ namespace summer2
         {
             InitializeComponent();
         }
+        public string FirstName
+        {
+            get { return firstname.Text; }
+            set { firstname.Text = value; }
+        }
 
+        public string LastName
+        {
+            get { return lastname.Text; }
+            set { lastname.Text = value; }
+        }
+
+        public string Phone
+        {
+            get { return phonelb.Text; }
+            set { phonelb.Text = value; }
+        }
+
+        public string Email
+        {
+            get { return emaillb.Text; }
+            set { emaillb.Text = value; }
+        }
+
+        public string DateOfBirth
+        {
+            get { return dob.Text; }
+            set { dob.Text = value; }
+        }
+
+        public string HireDate
+        {
+            get { return hiredate.Text; }
+            set { hiredate.Text = value; }
+        }
+
+        public string Role
+        {
+            get { return role.Text; }
+            set { role.Text = value; }
+        }
+
+        public Image Photo
+        {
+            get { return empimage.Image; }
+            set { empimage.Image = value; }
+        }
+        //continue all labels
+        //lezim 3al select all from employees kel label yet8ayar kel marra (next work)
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -42,7 +91,7 @@ namespace summer2
             addemployees parentForm = this.ParentForm as addemployees;
 
             // Access the FlowLayoutPanel from the parent form
-            FlowLayoutPanel flowLayoutPanel = parentForm.flowLayoutPanel2;
+            FlowLayoutPanel flowLayoutPanel = parentForm.employeesflp;
 
             // Remove this UserControl instance from the FlowLayoutPanel
             flowLayoutPanel.Controls.Remove(this);

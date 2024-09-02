@@ -33,20 +33,21 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.siticoneCustomGradientPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.mainpanel = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
+            this.hiredate = new MaterialSkin.Controls.MaterialLabel();
+            this.role = new MaterialSkin.Controls.MaterialLabel();
+            this.dob = new MaterialSkin.Controls.MaterialLabel();
+            this.addresslb = new MaterialSkin.Controls.MaterialLabel();
+            this.emaillb = new MaterialSkin.Controls.MaterialLabel();
+            this.phonelb = new MaterialSkin.Controls.MaterialLabel();
+            this.lastname = new MaterialSkin.Controls.MaterialLabel();
             this.firstname = new MaterialSkin.Controls.MaterialLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.siticoneCirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.empimage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.contextMenuStrip1.SuspendLayout();
-            this.siticoneCustomGradientPanel1.SuspendLayout();
+            this.mainpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empimage)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel3
@@ -86,111 +87,126 @@
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
-            // siticoneCustomGradientPanel1
+            // mainpanel
             // 
-            this.siticoneCustomGradientPanel1.BorderRadius = 25;
-            this.siticoneCustomGradientPanel1.Controls.Add(this.materialLabel1);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.materialLabel7);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.materialLabel6);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.materialLabel5);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.materialLabel4);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.materialLabel2);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.firstname);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
-            this.siticoneCustomGradientPanel1.Controls.Add(this.siticoneCirclePictureBox1);
-            this.siticoneCustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor2 = System.Drawing.Color.Beige;
-            this.siticoneCustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
-            this.siticoneCustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.siticoneCustomGradientPanel1.Margin = new System.Windows.Forms.Padding(10);
-            this.siticoneCustomGradientPanel1.Name = "siticoneCustomGradientPanel1";
-            this.siticoneCustomGradientPanel1.Size = new System.Drawing.Size(487, 338);
-            this.siticoneCustomGradientPanel1.TabIndex = 11;
+            this.mainpanel.BorderRadius = 25;
+            this.mainpanel.Controls.Add(this.hiredate);
+            this.mainpanel.Controls.Add(this.role);
+            this.mainpanel.Controls.Add(this.dob);
+            this.mainpanel.Controls.Add(this.addresslb);
+            this.mainpanel.Controls.Add(this.emaillb);
+            this.mainpanel.Controls.Add(this.phonelb);
+            this.mainpanel.Controls.Add(this.lastname);
+            this.mainpanel.Controls.Add(this.firstname);
+            this.mainpanel.Controls.Add(this.guna2PictureBox1);
+            this.mainpanel.Controls.Add(this.empimage);
+            this.mainpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.mainpanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(184)))), ((int)(((byte)(174)))));
+            this.mainpanel.FillColor3 = System.Drawing.Color.RosyBrown;
+            this.mainpanel.FillColor4 = System.Drawing.Color.RosyBrown;
+            this.mainpanel.Location = new System.Drawing.Point(0, 0);
+            this.mainpanel.Margin = new System.Windows.Forms.Padding(10);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(487, 338);
+            this.mainpanel.TabIndex = 11;
             // 
-            // materialLabel1
+            // hiredate
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(181, 293);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(84, 24);
-            this.materialLabel1.TabIndex = 27;
-            this.materialLabel1.Text = "Manager";
+            this.hiredate.AutoSize = true;
+            this.hiredate.BackColor = System.Drawing.Color.Transparent;
+            this.hiredate.Depth = 0;
+            this.hiredate.Font = new System.Drawing.Font("Roboto", 11F);
+            this.hiredate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.hiredate.Location = new System.Drawing.Point(181, 213);
+            this.hiredate.MouseState = MaterialSkin.MouseState.HOVER;
+            this.hiredate.Name = "hiredate";
+            this.hiredate.Size = new System.Drawing.Size(108, 24);
+            this.hiredate.TabIndex = 28;
+            this.hiredate.Text = "17-05-2004";
             // 
-            // materialLabel7
+            // role
             // 
-            this.materialLabel7.AutoSize = true;
-            this.materialLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(181, 250);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(108, 24);
-            this.materialLabel7.TabIndex = 26;
-            this.materialLabel7.Text = "17-05-2004";
+            this.role.AutoSize = true;
+            this.role.BackColor = System.Drawing.Color.Transparent;
+            this.role.Depth = 0;
+            this.role.Font = new System.Drawing.Font("Roboto", 11F);
+            this.role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.role.Location = new System.Drawing.Point(181, 293);
+            this.role.MouseState = MaterialSkin.MouseState.HOVER;
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(84, 24);
+            this.role.TabIndex = 27;
+            this.role.Text = "Manager";
             // 
-            // materialLabel6
+            // dob
             // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(181, 207);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(95, 24);
-            this.materialLabel6.TabIndex = 25;
-            this.materialLabel6.Text = "Kfarhawra";
+            this.dob.AutoSize = true;
+            this.dob.BackColor = System.Drawing.Color.Transparent;
+            this.dob.Depth = 0;
+            this.dob.Font = new System.Drawing.Font("Roboto", 11F);
+            this.dob.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dob.Location = new System.Drawing.Point(181, 254);
+            this.dob.MouseState = MaterialSkin.MouseState.HOVER;
+            this.dob.Name = "dob";
+            this.dob.Size = new System.Drawing.Size(108, 24);
+            this.dob.TabIndex = 26;
+            this.dob.Text = "17-05-2004";
             // 
-            // materialLabel5
+            // addresslb
             // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(181, 161);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(275, 24);
-            this.materialLabel5.TabIndex = 24;
-            this.materialLabel5.Text = "chamounjoseph78@gmail.com";
+            this.addresslb.AutoSize = true;
+            this.addresslb.BackColor = System.Drawing.Color.Transparent;
+            this.addresslb.Depth = 0;
+            this.addresslb.Font = new System.Drawing.Font("Roboto", 11F);
+            this.addresslb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.addresslb.Location = new System.Drawing.Point(181, 177);
+            this.addresslb.MouseState = MaterialSkin.MouseState.HOVER;
+            this.addresslb.Name = "addresslb";
+            this.addresslb.Size = new System.Drawing.Size(95, 24);
+            this.addresslb.TabIndex = 25;
+            this.addresslb.Text = "Kfarhawra";
             // 
-            // materialLabel4
+            // emaillb
             // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(181, 114);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(98, 24);
-            this.materialLabel4.TabIndex = 23;
-            this.materialLabel4.Text = "81335243";
+            this.emaillb.AutoSize = true;
+            this.emaillb.BackColor = System.Drawing.Color.Transparent;
+            this.emaillb.Depth = 0;
+            this.emaillb.Font = new System.Drawing.Font("Roboto", 11F);
+            this.emaillb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.emaillb.Location = new System.Drawing.Point(181, 139);
+            this.emaillb.MouseState = MaterialSkin.MouseState.HOVER;
+            this.emaillb.Name = "emaillb";
+            this.emaillb.Size = new System.Drawing.Size(275, 24);
+            this.emaillb.TabIndex = 24;
+            this.emaillb.Text = "chamounjoseph78@gmail.com";
             // 
-            // materialLabel2
+            // phonelb
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(181, 68);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(90, 24);
-            this.materialLabel2.TabIndex = 22;
-            this.materialLabel2.Text = "Chamoun";
+            this.phonelb.AutoSize = true;
+            this.phonelb.BackColor = System.Drawing.Color.Transparent;
+            this.phonelb.Depth = 0;
+            this.phonelb.Font = new System.Drawing.Font("Roboto", 11F);
+            this.phonelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.phonelb.Location = new System.Drawing.Point(181, 101);
+            this.phonelb.MouseState = MaterialSkin.MouseState.HOVER;
+            this.phonelb.Name = "phonelb";
+            this.phonelb.Size = new System.Drawing.Size(98, 24);
+            this.phonelb.TabIndex = 23;
+            this.phonelb.Text = "81335243";
+            // 
+            // lastname
+            // 
+            this.lastname.AutoSize = true;
+            this.lastname.BackColor = System.Drawing.Color.Transparent;
+            this.lastname.Depth = 0;
+            this.lastname.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lastname.Location = new System.Drawing.Point(181, 60);
+            this.lastname.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lastname.Name = "lastname";
+            this.lastname.Size = new System.Drawing.Size(90, 24);
+            this.lastname.TabIndex = 22;
+            this.lastname.Text = "Chamoun";
             // 
             // firstname
             // 
@@ -219,18 +235,18 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
-            // siticoneCirclePictureBox1
+            // empimage
             // 
-            this.siticoneCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneCirclePictureBox1.Image = global::summer2.Properties.Resources.No_Image_Available;
-            this.siticoneCirclePictureBox1.ImageRotate = 0F;
-            this.siticoneCirclePictureBox1.Location = new System.Drawing.Point(25, 24);
-            this.siticoneCirclePictureBox1.Name = "siticoneCirclePictureBox1";
-            this.siticoneCirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCirclePictureBox1.Size = new System.Drawing.Size(127, 123);
-            this.siticoneCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.siticoneCirclePictureBox1.TabIndex = 18;
-            this.siticoneCirclePictureBox1.TabStop = false;
+            this.empimage.BackColor = System.Drawing.Color.Transparent;
+            this.empimage.Image = global::summer2.Properties.Resources.No_Image_Available;
+            this.empimage.ImageRotate = 0F;
+            this.empimage.Location = new System.Drawing.Point(25, 24);
+            this.empimage.Name = "empimage";
+            this.empimage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.empimage.Size = new System.Drawing.Size(127, 123);
+            this.empimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.empimage.TabIndex = 18;
+            this.empimage.TabStop = false;
             // 
             // employeeUS
             // 
@@ -238,14 +254,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.siticoneCustomGradientPanel1);
+            this.Controls.Add(this.mainpanel);
             this.Name = "employeeUS";
             this.Size = new System.Drawing.Size(487, 338);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.siticoneCustomGradientPanel1.ResumeLayout(false);
-            this.siticoneCustomGradientPanel1.PerformLayout();
+            this.mainpanel.ResumeLayout(false);
+            this.mainpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,15 +272,16 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel siticoneCustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox siticoneCirclePictureBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel mainpanel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox empimage;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
-        private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel dob;
+        private MaterialSkin.Controls.MaterialLabel addresslb;
+        private MaterialSkin.Controls.MaterialLabel emaillb;
+        private MaterialSkin.Controls.MaterialLabel phonelb;
+        private MaterialSkin.Controls.MaterialLabel lastname;
         public MaterialSkin.Controls.MaterialLabel firstname;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel role;
+        private MaterialSkin.Controls.MaterialLabel hiredate;
     }
 }
