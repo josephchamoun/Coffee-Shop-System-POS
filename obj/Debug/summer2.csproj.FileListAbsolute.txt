@@ -57,3 +57,4 @@ C:\Users\96181\source\repos\summer2\obj\Debug\summer2.EmployeesShiftsUC.resource
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.ShiftDaysUC.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.supplierproducts.resources
 C:\Users\96181\source\repos\summer2\obj\Debug\summer2.addproductscard.resources
+C:\Users\96181\source\repos\summer2\bin\Debug\MySql.Data.dll

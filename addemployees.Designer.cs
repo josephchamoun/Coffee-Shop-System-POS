@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.employeesflp = new System.Windows.Forms.FlowLayoutPanel();
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.addbtn = new Siticone.Desktop.UI.WinForms.SiticoneCircleButton();
             this.siticoneTextBox1 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel2
+            // employeesflp
             // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.employeesflp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(28, 153);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(967, 506);
-            this.flowLayoutPanel2.TabIndex = 3;
+            this.employeesflp.AutoScroll = true;
+            this.employeesflp.Location = new System.Drawing.Point(28, 153);
+            this.employeesflp.Name = "employeesflp";
+            this.employeesflp.Size = new System.Drawing.Size(967, 506);
+            this.employeesflp.TabIndex = 3;
             // 
             // siticoneBorderlessForm1
             // 
@@ -106,7 +106,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.siticoneTextBox1);
-            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.employeesflp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "addemployees";
             this.Text = "Form1";
@@ -118,7 +118,7 @@
 
         #endregion
 
-        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        public System.Windows.Forms.FlowLayoutPanel employeesflp;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox1;
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
         private Siticone.Desktop.UI.WinForms.SiticoneCircleButton addbtn;
